@@ -1,0 +1,26 @@
+CC0 1.0 Universal (CC0 1.0) Public Domain Dedication, for the text and the code
+
+To the extent possible under law, Joaquín Caballero (Built to Click) has waived all
+copyright and related or neighboring rights to the text and the code in this repository
+(everything outside the examples/ folder, except what is listed below).
+
+This work is published from: Paraguay.
+
+You can copy, modify, distribute and use the text and the code, including for commercial
+purposes, all without asking permission and without attribution.
+
+Full legal text: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+NOT covered by this dedication, all rights reserved:
+
+- Everything in examples/ (the videos, the stills and the GIFs). They are real videos of
+  Built to Click and are here only to show what the pipeline produces. Watch them, link to
+  them, do not reuse or re-upload them.
+- The Built to Click name and logo, and Joaquín Caballero's face, voice and likeness,
+  wherever they appear.
+
+Third-party material keeps its own license: Remotion (its own license), Poppins (SIL Open
+Font License), the Solar icon set (CC BY 4.0) and Remix Icon (Apache 2.0), which the
+vsl-motion project downloads through npm.
+
+THE WORK IS PROVIDED AS IS, WITHOUT WARRANTY OF ANY KIND.

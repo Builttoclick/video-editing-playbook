@@ -1,0 +1,142 @@
+[
+ {
+  "name": "tap",
+  "file": "tap.wav",
+  "duration": 0.06,
+  "hit_ms": 2,
+  "ref_db": -13.67,
+  "rel_db": -20,
+  "use": "snap zoom / tiny UI landing; the quietest cue, barely felt",
+  "source": "synthesized by sfx_kit.py, no licence needed"
+ },
+ {
+  "name": "pop",
+  "file": "pop.wav",
+  "duration": 0.1,
+  "hit_ms": 3,
+  "ref_db": -16.57,
+  "rel_db": -12,
+  "use": "a text card, chip, number or emoji appearing",
+  "source": "synthesized by sfx_kit.py, no licence needed"
+ },
+ {
+  "name": "click",
+  "file": "click.wav",
+  "duration": 0.045,
+  "hit_ms": 1,
+  "ref_db": -20.61,
+  "rel_db": -14,
+  "use": "a click or button press on screen",
+  "source": "synthesized by sfx_kit.py, no licence needed"
+ },
+ {
+  "name": "tick",
+  "file": "tick.wav",
+  "duration": 0.025,
+  "hit_ms": 1,
+  "ref_db": -19.09,
+  "rel_db": -18,
+  "use": "typing (every ~7 characters) or a list item",
+  "source": "synthesized by sfx_kit.py, no licence needed"
+ },
+ {
+  "name": "swipe",
+  "file": "swipe.wav",
+  "duration": 0.22,
+  "hit_ms": 110,
+  "ref_db": -12.74,
+  "rel_db": -14,
+  "use": "a list line or screen sliding in",
+  "source": "synthesized by sfx_kit.py, no licence needed"
+ },
+ {
+  "name": "whoosh_short",
+  "file": "whoosh_short.wav",
+  "duration": 0.36,
+  "hit_ms": 216,
+  "ref_db": -16.1,
+  "rel_db": -12,
+  "use": "the cut between two beats (hook->body->CTA)",
+  "source": "synthesized by sfx_kit.py, no licence needed"
+ },
+ {
+  "name": "whoosh",
+  "file": "whoosh.wav",
+  "duration": 0.6,
+  "hit_ms": 372,
+  "ref_db": -14.56,
+  "rel_db": -11,
+  "use": "a big transition, a full-screen card in or out",
+  "source": "synthesized by sfx_kit.py, no licence needed"
+ },
+ {
+  "name": "swoosh_up",
+  "file": "swoosh_up.wav",
+  "duration": 0.42,
+  "hit_ms": 370,
+  "ref_db": -17.98,
+  "rel_db": -13,
+  "use": "a push-in or an element rising into frame",
+  "source": "synthesized by sfx_kit.py, no licence needed"
+ },
+ {
+  "name": "riser",
+  "file": "riser.wav",
+  "duration": 1.6,
+  "hit_ms": 1600,
+  "ref_db": -15.76,
+  "rel_db": -13,
+  "use": "the 1.6 s BEFORE a reveal: its end lands on the reveal",
+  "source": "synthesized by sfx_kit.py, no licence needed"
+ },
+ {
+  "name": "impact",
+  "file": "impact.wav",
+  "duration": 1.1,
+  "hit_ms": 5,
+  "ref_db": -9.48,
+  "rel_db": -8,
+  "use": "the reveal itself: price, key number, the big claim (max 1-2 per ad)",
+  "source": "synthesized by sfx_kit.py, no licence needed"
+ },
+ {
+  "name": "thud",
+  "file": "thud.wav",
+  "duration": 0.32,
+  "hit_ms": 4,
+  "ref_db": -12.61,
+  "rel_db": -10,
+  "use": "a stamp, a strike-through, a hard stop",
+  "source": "synthesized by sfx_kit.py, no licence needed"
+ },
+ {
+  "name": "ding",
+  "file": "ding.wav",
+  "duration": 0.8,
+  "hit_ms": 3,
+  "ref_db": -8.12,
+  "rel_db": -11,
+  "use": "a win: a result, a check mark, \"listo\"",
+  "source": "synthesized by sfx_kit.py, no licence needed"
+ },
+ {
+  "name": "notify",
+  "file": "notify.wav",
+  "duration": 0.6,
+  "hit_ms": 3,
+  "ref_db": -10.65,
+  "rel_db": -9,
+  "use": "a message arriving: WhatsApp, \"te escriben\", a lead",
+  "source": "synthesized by sfx_kit.py, no licence needed"
+ },
+ {
+  "name": "shutter",
+  "file": "shutter.wav",
+  "duration": 0.26,
+  "hit_ms": 2,
+  "ref_db": -22.11,
+  "rel_db": -12,
+  "use": "a photo or screenshot appearing",
+  "source": "synthesized by sfx_kit.py, no licence needed"
+ }
+]

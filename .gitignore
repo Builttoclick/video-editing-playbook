@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+node_modules/
+.DS_Store
+code/vsl-motion/cache/
+code/vsl-motion/out/
+code/vsl-motion/EXPORT/
+code/vsl-motion/src/data/icons.json

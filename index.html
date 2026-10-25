@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video Editing Playbook: examples</title>
+<meta name="description" content="Real videos edited with an AI agent and code: a VSL with 3D motion graphics behind the speaker, a raw vs finished comparison and three Meta ads, by Built to Click.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f6f7f9; --surface: #ffffff; --ink: #0a1e3f; --muted: #556074; --line: #dfe3ea; --accent: #c9801f;
+  --shadow: 0 10px 30px rgba(10, 30, 63, .10);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #06142c; --surface: #0b2042; --ink: #f4f6fa; --muted: #a9b1bf; --line: #1c3459; --accent: #f5a83c;
+    --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #06142c; --surface: #0b2042; --ink: #f4f6fa; --muted: #a9b1bf; --line: #1c3459; --accent: #f5a83c;
+  --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 500 16px/1.6 Poppins, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+a { color: var(--accent); text-underline-offset: 3px; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+header { padding: 56px 0 24px; }
+.eyebrow { font-weight: 600; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin: 0 0 8px; }
+h1 { font-weight: 700; font-size: clamp(30px, 5vw, 48px); line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 16px; }
+h2 { font-weight: 700; font-size: clamp(22px, 3.2vw, 30px); line-height: 1.2; letter-spacing: -0.01em; margin: 0 0 8px; }
+h3 { font-weight: 600; font-size: 17px; margin: 14px 0 4px; }
+p { margin: 0 0 12px; color: var(--muted); max-width: 68ch; }
+.lead { font-size: 18px; color: var(--ink); }
+section { padding: 32px 0; border-top: 1px solid var(--line); }
+.grid { display: grid; gap: 20px; }
+.grid.two { grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); align-items: start; }
+.grid.three { grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 14px; box-shadow: var(--shadow); }
+video, img { display: block; width: 100%; height: auto; border-radius: 10px; background: #000; }
+.vertical video { aspect-ratio: 9 / 16; max-height: 78vh; object-fit: contain; }
+.square video { aspect-ratio: 1 / 1; }
+.card p { font-size: 14.5px; margin: 6px 0 0; }
+.meta { font-size: 13px; color: var(--muted); }
+.wide img { border-radius: 10px; }
+footer { padding: 32px 0 56px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
+.btn { display: inline-block; font-weight: 600; padding: 10px 16px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); text-decoration: none; margin: 4px 8px 4px 0; }
+.btn:hover { border-color: var(--accent); }
+</style>
+</head>
+<body>
+<header class="wrap">
+  <p class="eyebrow">Video Editing Playbook</p>
+  <h1>Real videos, edited by an AI agent and code</h1>
+  <p class="lead">A sales video with 3D motion graphics behind the speaker, the raw take next to the finished one, and three Meta ads. Recorded on a phone, pre-edited by Claude, cut by a human in CapCut.</p>
+  <p>The videos are in Spanish (Paraguay). How every step works, with the code: the repository.</p>
+  <a class="btn" href="https://github.com/Builttoclick/video-editing-playbook">Read the playbook on GitHub</a>
+  <a class="btn" href="https://github.com/Builttoclick/video-editing-playbook/tree/main/docs">The 18 docs</a>
+</header>
+
+<main class="wrap">
+  <section id="vsl">
+    <div class="grid two">
+      <div class="card vertical">
+        <video controls playsinline preload="metadata" poster="examples/images/poster-vsl-v2.jpg" src="examples/videos/vsl-v2.mp4"></video>
+      </div>
+      <div>
+        <h2>The VSL, 2:23</h2>
+        <p>One take of 17:50 recorded in an evening. Code synced the lav mic, transcribed every word, picked one take per part and wrote the CapCut project; Joaquín cut it. The next morning every graphic was coded in React (Remotion), in four batches, each one reviewed by Joaquín, and placed back inside the same CapCut timeline. HD and native 4K masters were exported in code the same afternoon.</p>
+        <p>The name in 3D sits <strong>behind the speaker's head</strong>: each graphic is rendered as two layers, and a person mask from Apple Vision cuts the speaker out of the back one, frame by frame.</p>
+        <p class="meta">This copy: 720x1280, 24.5 MB. The landing page plays a 41 MB 1080x1920 encode.</p>
+        <a class="btn" href="https://github.com/Builttoclick/video-editing-playbook/blob/main/docs/11-motion-graphics-in-code.md">How the graphics were made</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="layers">
+    <h2>Two layers and a person mask</h2>
+    <p>The raw frame, the layer on the wall, the layer on the chest, the mask, the final frame.</p>
+    <div class="card wide"><img src="examples/images/two-layers.jpg" alt="Raw frame, back layer, front layer, person mask and the final frame of the VSL" loading="lazy" width="2304" height="886"></div>
+    <div class="card wide" style="margin-top:16px"><img src="examples/images/behind-the-head.jpg" alt="Raw frame, back layer with the name, person mask, and the final frame with the name behind the speaker's head" loading="lazy" width="1848" height="886"></div>
+  </section>
+
+  <section id="raw-vs-final">
+    <div class="grid two">
+      <div class="card square">
+        <video controls playsinline preload="metadata" poster="examples/images/poster-raw-vs-final.jpg" src="examples/videos/raw-vs-final.mp4"></video>
+      </div>
+      <div>
+        <h2>Raw take vs finished</h2>
+        <p>The first 9.9 seconds. On the left the phone file exactly as recorded, on the right the finished video, on the same frames, with the finished audio: the lav mic synced within a millisecond, captions one word at a time, the coded graphics.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="ads">
+    <h2>Three Meta ads from one shoot</h2>
+    <p>Hook, body and closing recorded as pieces and combined. Pre-edited by code, edited by Joaquín in CapCut, overlays designed in Claude Design and rendered with real transparency.</p>
+    <div class="grid three">
+      <div class="card vertical">
+        <video controls playsinline preload="none" poster="examples/images/poster-ad-V6-01.jpg" src="examples/videos/ad-V6-01.mp4"></video>
+        <h3>V6-01, 35 s</h3>
+        <p>"Son las dos de la mañana": the late-night scene hook, then how people buy today.</p>
+      </div>
+      <div class="card vertical">
+        <video controls playsinline preload="none" poster="examples/images/poster-ad-V6-03.jpg" src="examples/videos/ad-V6-03.mp4"></video>
+        <h3>V6-03, 36 s</h3>
+        <p>A client got a lead from ChatGPT. The ChatGPT box types itself, the flags land on the words.</p>
+      </div>
+      <div class="card vertical">
+        <video controls playsinline preload="none" poster="examples/images/poster-ad-V6-04.jpg" src="examples/videos/ad-V6-04.mp4"></video>
+        <h3>V6-04, 39 s</h3>
+        <p>A case study: people who found a business on Google without knowing its name.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="qa">
+    <h2>Every file is checked before anyone watches it</h2>
+    <p>Our QA script on one of the ads: the frame before and after every cut, and the Reels-ad dead zones in red with the 4:5 crop in blue. It also measures loudness and true peak, silences inside the speech and clicks at the cuts.</p>
+    <div class="card wide"><img src="examples/images/qa-safe.jpg" alt="Six frames of an ad with the Reels ad dead zones and the 4:5 crop drawn on them" loading="lazy" width="1620" height="510"></div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p>Made by <a href="https://builttoclick.com">Built to Click</a>, a web agency in Paraguay. The text and code of the playbook are CC0. These videos and images are not: watch and link, do not reuse.</p>
+</footer>
+</body>
+</html>
