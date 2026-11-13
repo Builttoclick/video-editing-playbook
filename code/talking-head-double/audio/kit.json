@@ -1,0 +1,192 @@
+{
+ "kit": 1,
+ "name": "an-01-ya-se-tus-preguntas",
+ "sr": 48000,
+ "roles": {
+  "land": {
+   "sound": "pro_pop_in/round",
+   "takes": 1,
+   "align": "onset",
+   "level_db": -5.5,
+   "offset_ms": 30,
+   "note": "the search bar lands; also 'SEO local:' (approved in the 10 s test)"
+  },
+  "land.big": {
+   "sound": "pro_pop_in/deep",
+   "takes": 1,
+   "align": "onset",
+   "level_db": -5.5,
+   "offset_ms": 30,
+   "note": "the map card lands, a lower body than the bar"
+  },
+  "key": {
+   "sound": "typing_key/clicky",
+   "takes": 12,
+   "align": "onset",
+   "level_db": -1.0,
+   "offset_ms": 8,
+   "min_gap_ms": 87,
+   "note": "one take per letter, never the same twice in a row (approved)"
+  },
+  "key.return": {
+   "sound": "typing_key/clicky",
+   "takes": 1,
+   "seed": 7,
+   "align": "onset",
+   "level_db": -0.5,
+   "offset_ms": 8,
+   "note": "Enter: same switch as the letters, its own seed (approved)"
+  },
+  "pop": {
+   "sound": "ui_pop/soft",
+   "takes": 3,
+   "align": "onset",
+   "level_db": -8.0,
+   "offset_ms": 4,
+   "min_gap_ms": 114,
+   "note": "the three results arriving (approved)"
+  },
+  "tag": {
+   "sound": "fit/click/floss_lid",
+   "takes": 1,
+   "seed": 9,
+   "align": "onset",
+   "level_db": -8.0,
+   "offset_ms": 4,
+   "note": "the 'Top 3' tag: the film's one click voice, its own take (version 3: no pitched pop)"
+  },
+  "chip": {
+   "sound": "fit/click/floss_lid",
+   "takes": 5,
+   "align": "onset",
+   "level_db": -8.0,
+   "offset_ms": 4,
+   "note": "version 3, one dry click voice for the chips, the new ranks and the heatmap flips (no triad). Audition v3-click: z +4.0 strong for 'a crisp short plastic click', reads as 'a soft key release click', realness 0.81 (fitted from a CC0 recording); ui_pop/wide C5 read as a snare hit, realness 0.14"
+  },
+  "whoosh.short": {
+   "sound": "whoosh_fast/crisp",
+   "takes": 1,
+   "align": "peak",
+   "edits": {
+    "dur": 0.6,
+    "apex": 0.25
+   },
+   "level_db": -5.5,
+   "offset_ms": 37,
+   "note": "jump #9 to #3, the long move (approved)"
+  },
+  "swish": {
+   "sound": "swish/flick",
+   "takes": 1,
+   "align": "peak",
+   "edits": {
+    "dur": 0.4,
+    "apex": 0.14
+   },
+   "level_db": -5.5,
+   "offset_ms": 37,
+   "note": "jump #3 to #2, the short move (approved)"
+  },
+  "exit": {
+   "sound": "swipe/glide",
+   "takes": 1,
+   "align": "peak",
+   "level_db": -6.0,
+   "offset_ms": 37,
+   "note": "the list slides away before the calls arrive (reads as a fast whoosh; paper, cloth and velvet read as impact hits)"
+  },
+  "hit": {
+   "sound": "cut_hit/punch",
+   "takes": 1,
+   "align": "onset",
+   "edits": {
+    "pitch": "C2"
+   },
+   "level_db": -9.0,
+   "offset_ms": 0,
+   "note": "#1, tuned to the root (approved)"
+  },
+  "ding.wa": {
+   "sound": "notify/mid_wood",
+   "takes": 1,
+   "align": "onset",
+   "edits": {
+    "pitch": "C6"
+   },
+   "level_db": -8.5,
+   "offset_ms": 0,
+   "note": "every message from Joaquín, the same tone every time (approved; Joaquín's rule: 'un tono de mensaje que sea monótono, que siempre sea el mismo')"
+  },
+  "text": {
+   "sound": "fit/whoosh.short/bamboo_swish",
+   "takes": 4,
+   "align": "peak",
+   "edits": {
+    "dur": 0.3
+   },
+   "level_db": -8.0,
+   "offset_ms": 37,
+   "note": "version 4: one soft air swish per headline line, its peak while the first word rises (high-passed at 400 Hz in sound.py). Audition v4-text: first of 12 for 'a soft quick airy swoosh' (z +2.8, reads 'fast whoosh'), realness 0.98. The finger tap it replaced read as 'a snare drum hit' on 12 of 22 lines in the mix; Joaquín's note: 'no sé si no se sincroniza bien o no hay un buen match'"
+  },
+  "text.long": {
+   "sound": "fit/whoosh.short/bamboo_swish",
+   "takes": 3,
+   "align": "peak",
+   "edits": {
+    "dur": 0.45
+   },
+   "level_db": -8.0,
+   "offset_ms": 37,
+   "note": "the same swish, longer, for lines of 4 words or more, so it spans their cascade"
+  },
+  "tick": {
+   "sound": "pro_hover_tick/soft",
+   "takes": 3,
+   "align": "onset",
+   "level_db": -14.0,
+   "offset_ms": 0,
+   "note": "Google's suggestions, the '...' dot wave and the heatmap rings filling in (rank: plausible, a soft key release click)"
+  },
+  "scroll": {
+   "sound": "whoosh_fast/tight",
+   "takes": 1,
+   "align": "peak",
+   "level_db": -6.0,
+   "offset_ms": 37,
+   "note": "the page scrolls down to where your business is (rank: best of 7, reads as a fast whoosh)"
+  },
+  "send": {
+   "sound": "fit/pop/mouth_plop",
+   "takes": 1,
+   "align": "onset",
+   "level_db": -9.0,
+   "offset_ms": 4,
+   "note": "the viewer's own message leaving (audition send, 05-nov: 'a soft short low pop, a message being sent from a phone': third of 9 at z +2.6, reads as 'a mouth pop', fitted from a real recording; ui_pop/soft scored +2.7 but reads 'error buzz' and is the results pop, pro_pop/thup reads 'punchy impact hit')"
+  },
+  "tock": {
+   "sound": "knock/wood",
+   "takes": 1,
+   "align": "onset",
+   "level_db": -1.5,
+   "offset_ms": -40,
+   "note": "the visto: the two ticks turn blue inside the lens, a dry knock (the approved '#9' knock of the 10 s film: a different material than the pops and dings). Joaquín's ask, 05-nov: 'que tenga también un sonidito el clavado'"
+  },
+  "puff": {
+   "sound": "whoosh_fast/sleeve",
+   "takes": 1,
+   "align": "peak",
+   "edits": {
+    "dur": 0.5,
+    "apex": 0.3
+   },
+   "level_db": -6.0,
+   "offset_ms": 0,
+   "note": "the puff of smoke Joaquín vanishes in (Joaquín's ask on draft 2 of the talking head: 'aparece un puff y yo desaparezco, y que se escuche el puff'). Audition puff, 05-nov: first of 9 for 'a soft puff of air, a cartoon poof of smoke', z +3.3 strong, reads 'fast whoosh'; pro_whoosh_big/windy tied, cut_hit/air reads as a kick"
+  }
+ },
+ "off": {
+  "swell": "one build per film (earshot's launch rule): the riser into #1 is the one",
+  "shimmers": "version 2: Joaquín did not like the fairy sparkle on the end card ('ese tipo de hadas'); its cousins at #1 and on the gold sweep left with it",
+  "bell": "version 3: the glock climb (E5 G5 C6, C5 on the lockup) and every pitched sequence are out. Joaquín's words on v2: 'suena mucho a tecladito, muy piano, muy dulce, muy soft'; earshot read 0:26-0:40 of v2 as 'upbeat corporate pop music, glockenspiel', and mallet/glock C5 scores realness 0.07"
+ }
+}

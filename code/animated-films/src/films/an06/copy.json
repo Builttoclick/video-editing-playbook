@@ -1,0 +1,23 @@
+{
+  "beats": {
+    "hook": { "lines": ["Antes de pagarme un guaraní,", "vas a ver tu página."], "gold": ["tu", "página."] },
+    "name": { "lines": ["Me escribís el nombre", "de tu negocio."] },
+    "look": { "lines": ["Yo miro cómo te encuentra hoy", "la gente, y qué está haciendo", "tu competencia."] },
+    "video": { "lines": ["Y te mando un video", "de 5 minutos."], "gold": ["5", "minutos."] },
+    "show": { "lines": ["Ahí te muestro qué haría yo", "para que te escriban más,"] },
+    "sketch": { "lines": ["con un boceto de tu página que", "ya tiene tu nombre y tus fotos."], "gold": ["tu", "nombre", "tus", "fotos."] },
+    "like": { "lines": ["Si te gusta, arrancamos:"] },
+    "price": { "lines": ["X.XXX.XXX, y en 14 días", "está en el aire."], "gold": ["X.XXX.XXX,", "14", "días"] },
+    "keep": { "lines": ["Si no te convence,", "el análisis te queda igual."], "gold": ["igual."] },
+    "why": { "lines": ["¿Por qué trabajo así?"] },
+    "easier": { "lines": ["Porque es mucho más fácil decidir", "cuando ya viste tu página."], "gold": ["ya", "viste", "tu", "página."] }
+  },
+  "business": "Constructora Altura",
+  "chat": { "name": "Joaquín - Built to Click", "videoLabel": "Tu página", "videoDur": "5:12", "videoCaption": ["Tu análisis y el boceto de tu página."], "times": ["09:12", "09:14", "11:30"], "saved": "Guardado en tu chat" },
+  "cards": { "google": { "title": "Tu ficha de Google", "rating": "4,6", "reviews": "12 reseñas", "sub": "Sin página web" }, "instagram": { "title": "Tu Instagram", "sub": "1.240 seguidores" }, "competitors": ["Competidor 1", "Competidor 2"] },
+  "sketch": { "brand": "Constructora Altura", "nav": ["Obras", "Servicios", "Contacto"], "headline": "Casas llave en mano en Asunción", "sub": "Precio cerrado y fecha de entrega, desde el primer día.", "button": "Escribinos", "services": ["Casas llave en mano", "Reformas y ampliaciones", "Dirección de obra"] },
+  "labels": { "sketch": "Boceto", "live": "Tu página", "name": "tu nombre", "photos": "tus fotos" },
+  "buttons": { "yes": "Arrancamos", "no": "Lo pienso" },
+  "price": "X.XXX.XXX",
+  "end": { "lines": ["Escribime el nombre", "de tu negocio y te", "preparo tu video."], "price": "X.XXX.XXX", "sub": "Tu página, lista en 14 días.", "cta": "Escribinos por WhatsApp" }
+}

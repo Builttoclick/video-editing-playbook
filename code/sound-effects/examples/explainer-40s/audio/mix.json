@@ -1,0 +1,1169 @@
+{
+ "raw_lufs": -29.52,
+ "lufs": -17.53,
+ "true_peak_before_limit": 4.78,
+ "true_peak": -2.0,
+ "placed": [
+  {
+   "id": "hook:0.0",
+   "role": "text",
+   "file": "text_1.wav",
+   "visual_s": 0.1667,
+   "file_start_s": 0.1042,
+   "gain_db": -17.73,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "hook:1.0",
+   "role": "text",
+   "file": "text_2.wav",
+   "visual_s": 0.5,
+   "file_start_s": 0.4195,
+   "gain_db": -18.26,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "search:bar",
+   "role": "land",
+   "file": "land_1.wav",
+   "visual_s": 0.5333,
+   "file_start_s": 0.5621,
+   "gain_db": -10.92,
+   "limiter_db": -3.2
+  },
+  {
+   "id": "search:key:0",
+   "role": "key",
+   "file": "key_1.wav",
+   "visual_s": 0.8,
+   "file_start_s": 0.7975,
+   "gain_db": -11.05,
+   "limiter_db": -3.3
+  },
+  {
+   "id": "search:key:1",
+   "role": "key",
+   "file": "key_2.wav",
+   "visual_s": 0.8667,
+   "file_start_s": 0.8657,
+   "gain_db": -8.99,
+   "limiter_db": -4.5
+  },
+  {
+   "id": "search:key:2",
+   "role": "key",
+   "file": "key_3.wav",
+   "visual_s": 0.9,
+   "file_start_s": 0.8995,
+   "gain_db": -9.19,
+   "limiter_db": -4.5
+  },
+  {
+   "id": "search:key:3",
+   "role": "key",
+   "file": "key_4.wav",
+   "visual_s": 0.9667,
+   "file_start_s": 0.9652,
+   "gain_db": -10.91,
+   "limiter_db": -2.6
+  },
+  {
+   "id": "search:key:4",
+   "role": "key",
+   "file": "key_5.wav",
+   "visual_s": 1.0667,
+   "file_start_s": 1.0659,
+   "gain_db": -10.04,
+   "limiter_db": -3.9
+  },
+  {
+   "id": "search:key:5",
+   "role": "key",
+   "file": "key_6.wav",
+   "visual_s": 1.1333,
+   "file_start_s": 1.1318,
+   "gain_db": -8.64,
+   "limiter_db": -5.3
+  },
+  {
+   "id": "search:key:6",
+   "role": "key",
+   "file": "key_7.wav",
+   "visual_s": 1.2,
+   "file_start_s": 1.1992,
+   "gain_db": -9.66,
+   "limiter_db": -4.2
+  },
+  {
+   "id": "search:key:7",
+   "role": "key",
+   "file": "key_8.wav",
+   "visual_s": 1.2333,
+   "file_start_s": 1.2318,
+   "gain_db": -10.45,
+   "limiter_db": -2.9
+  },
+  {
+   "id": "search:key:8",
+   "role": "key",
+   "file": "key_9.wav",
+   "visual_s": 1.3333,
+   "file_start_s": 1.3331,
+   "gain_db": -10.46,
+   "limiter_db": -3.2
+  },
+  {
+   "id": "search:key:9",
+   "role": "key",
+   "file": "key_10.wav",
+   "visual_s": 1.4,
+   "file_start_s": 1.3982,
+   "gain_db": -9.66,
+   "limiter_db": -4.3
+  },
+  {
+   "id": "search:key:10",
+   "role": "key",
+   "file": "key_11.wav",
+   "visual_s": 1.4667,
+   "file_start_s": 1.4652,
+   "gain_db": -10.77,
+   "limiter_db": -3.3
+  },
+  {
+   "id": "search:key:11",
+   "role": "key",
+   "file": "key_12.wav",
+   "visual_s": 1.5333,
+   "file_start_s": 1.5321,
+   "gain_db": -10.53,
+   "limiter_db": -3.6
+  },
+  {
+   "id": "search:key:12",
+   "role": "key",
+   "file": "key_1.wav",
+   "visual_s": 1.5667,
+   "file_start_s": 1.5642,
+   "gain_db": -11.05,
+   "limiter_db": -3.3
+  },
+  {
+   "id": "search:key:13",
+   "role": "key",
+   "file": "key_2.wav",
+   "visual_s": 1.6333,
+   "file_start_s": 1.6323,
+   "gain_db": -8.99,
+   "limiter_db": -4.4
+  },
+  {
+   "id": "search:key:14",
+   "role": "key",
+   "file": "key_3.wav",
+   "visual_s": 1.7333,
+   "file_start_s": 1.7328,
+   "gain_db": -9.19,
+   "limiter_db": -4.5
+  },
+  {
+   "id": "search:key:15",
+   "role": "key",
+   "file": "key_4.wav",
+   "visual_s": 1.8333,
+   "file_start_s": 1.8318,
+   "gain_db": -10.91,
+   "limiter_db": -2.6
+  },
+  {
+   "id": "search:key:16",
+   "role": "key",
+   "file": "key_5.wav",
+   "visual_s": 1.9,
+   "file_start_s": 1.8992,
+   "gain_db": -10.04,
+   "limiter_db": -5.3
+  },
+  {
+   "id": "search:key:17",
+   "role": "key",
+   "file": "key_6.wav",
+   "visual_s": 1.9333,
+   "file_start_s": 1.9318,
+   "gain_db": -8.64,
+   "limiter_db": -5.4
+  },
+  {
+   "id": "search:key:18",
+   "role": "key",
+   "file": "key_7.wav",
+   "visual_s": 2.0,
+   "file_start_s": 1.9992,
+   "gain_db": -9.66,
+   "limiter_db": -4.2
+  },
+  {
+   "id": "search:key:19",
+   "role": "key",
+   "file": "key_8.wav",
+   "visual_s": 2.0667,
+   "file_start_s": 2.0652,
+   "gain_db": -10.45,
+   "limiter_db": -3.6
+  },
+  {
+   "id": "search:key:20",
+   "role": "key",
+   "file": "key_9.wav",
+   "visual_s": 2.1333,
+   "file_start_s": 2.1331,
+   "gain_db": -10.46,
+   "limiter_db": -3.2
+  },
+  {
+   "id": "search:key:21",
+   "role": "key",
+   "file": "key_10.wav",
+   "visual_s": 2.2333,
+   "file_start_s": 2.2315,
+   "gain_db": -9.66,
+   "limiter_db": -4.3
+  },
+  {
+   "id": "search:key:22",
+   "role": "key",
+   "file": "key_11.wav",
+   "visual_s": 2.2667,
+   "file_start_s": 2.2652,
+   "gain_db": -10.77,
+   "limiter_db": -3.2
+  },
+  {
+   "id": "search:key:23",
+   "role": "key",
+   "file": "key_12.wav",
+   "visual_s": 2.3333,
+   "file_start_s": 2.3321,
+   "gain_db": -10.53,
+   "limiter_db": -3.6
+  },
+  {
+   "id": "search:key:24",
+   "role": "key",
+   "file": "key_1.wav",
+   "visual_s": 2.4333,
+   "file_start_s": 2.4308,
+   "gain_db": -11.05,
+   "limiter_db": -3.3
+  },
+  {
+   "id": "search:key:25",
+   "role": "key",
+   "file": "key_2.wav",
+   "visual_s": 2.5,
+   "file_start_s": 2.499,
+   "gain_db": -8.99,
+   "limiter_db": -4.4
+  },
+  {
+   "id": "search:suggest:0",
+   "role": "tick",
+   "file": "tick_1.wav",
+   "visual_s": 1.9,
+   "file_start_s": 1.8988,
+   "gain_db": -12.78,
+   "limiter_db": -5.3
+  },
+  {
+   "id": "search:suggest:1",
+   "role": "tick",
+   "file": "tick_2.wav",
+   "visual_s": 2.0667,
+   "file_start_s": 2.0655,
+   "gain_db": -13.6,
+   "limiter_db": -3.6
+  },
+  {
+   "id": "search:suggest:2",
+   "role": "tick",
+   "file": "tick_3.wav",
+   "visual_s": 2.2333,
+   "file_start_s": 2.2321,
+   "gain_db": -12.92,
+   "limiter_db": -4.3
+  },
+  {
+   "id": "search:suggest:3",
+   "role": "tick",
+   "file": "tick_1.wav",
+   "visual_s": 2.4,
+   "file_start_s": 2.3988,
+   "gain_db": -12.78,
+   "limiter_db": -3.3
+  },
+  {
+   "id": "variety:0.0",
+   "role": "text",
+   "file": "text_3.wav",
+   "visual_s": 3.0333,
+   "file_start_s": 2.9698,
+   "gain_db": -17.22,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "variety:1.0",
+   "role": "text",
+   "file": "text_4.wav",
+   "visual_s": 3.4667,
+   "file_start_s": 3.3862,
+   "gain_db": -17.19,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "search:enter",
+   "role": "key.return",
+   "file": "key-return_1.wav",
+   "visual_s": 4.1,
+   "file_start_s": 4.0985,
+   "gain_db": -7.9,
+   "limiter_db": -4.8
+  },
+  {
+   "id": "map:card",
+   "role": "land.big",
+   "file": "land-big_1.wav",
+   "visual_s": 4.5333,
+   "file_start_s": 4.5621,
+   "gain_db": -9.8,
+   "limiter_db": -4.1
+  },
+  {
+   "id": "map:0.0",
+   "role": "text",
+   "file": "text_1.wav",
+   "visual_s": 4.6333,
+   "file_start_s": 4.5708,
+   "gain_db": -17.73,
+   "limiter_db": -4.1
+  },
+  {
+   "id": "map:1.0",
+   "role": "text",
+   "file": "text_2.wav",
+   "visual_s": 4.9667,
+   "file_start_s": 4.8862,
+   "gain_db": -18.26,
+   "limiter_db": -0.3
+  },
+  {
+   "id": "map:you-are-here",
+   "role": "blip",
+   "file": "blip_1.wav",
+   "visual_s": 4.8,
+   "file_start_s": 4.7985,
+   "gain_db": -12.81,
+   "limiter_db": -1.1
+  },
+  {
+   "id": "map:pin:1",
+   "role": "pin",
+   "file": "pin_1.wav",
+   "visual_s": 5.0667,
+   "file_start_s": 5.0707,
+   "gain_db": -10.66,
+   "limiter_db": -3.3
+  },
+  {
+   "id": "map:pin:2",
+   "role": "pin",
+   "file": "pin_2.wav",
+   "visual_s": 5.2333,
+   "file_start_s": 5.2373,
+   "gain_db": -10.83,
+   "limiter_db": -3.1
+  },
+  {
+   "id": "map:pin:3",
+   "role": "pin",
+   "file": "pin_3.wav",
+   "visual_s": 5.4,
+   "file_start_s": 5.404,
+   "gain_db": -10.84,
+   "limiter_db": -3.1
+  },
+  {
+   "id": "map:row:1",
+   "role": "pop",
+   "file": "pop_1.wav",
+   "visual_s": 5.6,
+   "file_start_s": 5.6015,
+   "gain_db": -11.39,
+   "limiter_db": -2.5
+  },
+  {
+   "id": "map:row:2",
+   "role": "pop",
+   "file": "pop_2.wav",
+   "visual_s": 5.7667,
+   "file_start_s": 5.7682,
+   "gain_db": -11.4,
+   "limiter_db": -2.5
+  },
+  {
+   "id": "map:row:3",
+   "role": "pop",
+   "file": "pop_3.wav",
+   "visual_s": 5.9333,
+   "file_start_s": 5.9348,
+   "gain_db": -11.87,
+   "limiter_db": -2.0
+  },
+  {
+   "id": "you:scroll",
+   "role": "scroll",
+   "file": "scroll_1.wav",
+   "visual_s": 7.1667,
+   "file_start_s": 7.0422,
+   "gain_db": -11.83,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "you:1.0",
+   "role": "text",
+   "file": "text_4.wav",
+   "visual_s": 7.5,
+   "file_start_s": 7.4195,
+   "gain_db": -17.19,
+   "limiter_db": -0.0
+  },
+  {
+   "id": "you:mine",
+   "role": "tock",
+   "file": "tock_1.wav",
+   "visual_s": 7.8667,
+   "file_start_s": 7.8145,
+   "gain_db": -7.12,
+   "limiter_db": -6.8
+  },
+  {
+   "id": "you:dots:248.0",
+   "role": "tick",
+   "file": "tick_1.wav",
+   "visual_s": 8.3,
+   "file_start_s": 8.2988,
+   "gain_db": -12.78,
+   "limiter_db": -1.2
+  },
+  {
+   "id": "you:dots:248.1",
+   "role": "tick",
+   "file": "tick_2.wav",
+   "visual_s": 8.4333,
+   "file_start_s": 8.4321,
+   "gain_db": -13.6,
+   "limiter_db": -0.8
+  },
+  {
+   "id": "you:dots:248.2",
+   "role": "tick",
+   "file": "tick_3.wav",
+   "visual_s": 8.5667,
+   "file_start_s": 8.5655,
+   "gain_db": -12.92,
+   "limiter_db": -1.0
+  },
+  {
+   "id": "seo:line:0",
+   "role": "land",
+   "file": "land_1.wav",
+   "visual_s": 9.2,
+   "file_start_s": 9.2288,
+   "gain_db": -10.92,
+   "limiter_db": -3.0
+  },
+  {
+   "id": "seo:1.0",
+   "role": "text.long",
+   "file": "text-long_3.wav",
+   "visual_s": 9.5,
+   "file_start_s": 9.4135,
+   "gain_db": -19.77,
+   "limiter_db": -0.1
+  },
+  {
+   "id": "seo:2.0",
+   "role": "text.long",
+   "file": "text-long_1.wav",
+   "visual_s": 10.1333,
+   "file_start_s": 10.0078,
+   "gain_db": -18.76,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "seo:outline",
+   "role": "zip",
+   "file": "zip_1.wav",
+   "visual_s": 9.8333,
+   "file_start_s": 9.7148,
+   "gain_db": -15.33,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "seo:tag",
+   "role": "tag",
+   "file": "tag_1.wav",
+   "visual_s": 10.2,
+   "file_start_s": 10.1995,
+   "gain_db": -7.94,
+   "limiter_db": -6.1
+  },
+  {
+   "id": "seo:sweep",
+   "role": "sweep",
+   "file": "sweep_1.wav",
+   "visual_s": 11.1,
+   "file_start_s": 11.0275,
+   "gain_db": -12.21,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "how:0.0",
+   "role": "text",
+   "file": "text_3.wav",
+   "visual_s": 12.2333,
+   "file_start_s": 12.1698,
+   "gain_db": -17.22,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "how:1.0",
+   "role": "text",
+   "file": "text_4.wav",
+   "visual_s": 12.5667,
+   "file_start_s": 12.4862,
+   "gain_db": -17.19,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "how:chip:0",
+   "role": "chip",
+   "file": "chip_1.wav",
+   "visual_s": 13.0,
+   "file_start_s": 13.0,
+   "gain_db": -9.83,
+   "limiter_db": -4.1
+  },
+  {
+   "id": "how:chip:1",
+   "role": "chip",
+   "file": "chip_2.wav",
+   "visual_s": 14.7333,
+   "file_start_s": 14.7331,
+   "gain_db": -8.09,
+   "limiter_db": -5.8
+  },
+  {
+   "id": "how:chip:2",
+   "role": "chip",
+   "file": "chip_3.wav",
+   "visual_s": 16.4667,
+   "file_start_s": 16.4662,
+   "gain_db": -8.67,
+   "limiter_db": -5.4
+  },
+  {
+   "id": "climb:move:1",
+   "role": "whoosh.short",
+   "file": "whoosh-short_1.wav",
+   "visual_s": 13.5,
+   "file_start_s": 13.2875,
+   "gain_db": -8.15,
+   "limiter_db": -0.0
+  },
+  {
+   "id": "climb:rank:3",
+   "role": "chip",
+   "file": "chip_4.wav",
+   "visual_s": 13.7333,
+   "file_start_s": 13.7328,
+   "gain_db": -9.38,
+   "limiter_db": -4.5
+  },
+  {
+   "id": "climb:move:2",
+   "role": "swish",
+   "file": "swish_1.wav",
+   "visual_s": 15.1667,
+   "file_start_s": 15.0632,
+   "gain_db": -7.64,
+   "limiter_db": -0.0
+  },
+  {
+   "id": "climb:rank:2",
+   "role": "chip",
+   "file": "chip_5.wav",
+   "visual_s": 15.3333,
+   "file_start_s": 15.3328,
+   "gain_db": -9.95,
+   "limiter_db": -4.1
+  },
+  {
+   "id": "climb:build",
+   "role": "riser",
+   "file": "riser_1.wav",
+   "visual_s": 17.2,
+   "file_start_s": 16.5405,
+   "gain_db": -8.16,
+   "limiter_db": -0.5
+  },
+  {
+   "id": "climb:rank:1",
+   "role": "hit",
+   "file": "hit_1.wav",
+   "visual_s": 17.2,
+   "file_start_s": 17.2,
+   "gain_db": -16.44,
+   "limiter_db": -0.4
+  },
+  {
+   "id": "climb:chips-out",
+   "role": "scroll",
+   "file": "scroll_1.wav",
+   "visual_s": 18.8333,
+   "file_start_s": 18.7088,
+   "gain_db": -15.83,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "zone:list-out",
+   "role": "exit",
+   "file": "exit_1.wav",
+   "visual_s": 19.4,
+   "file_start_s": 19.1795,
+   "gain_db": -11.24,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "zone:card",
+   "role": "land.big",
+   "file": "land-big_1.wav",
+   "visual_s": 19.5333,
+   "file_start_s": 19.5621,
+   "gain_db": -9.8,
+   "limiter_db": -4.2
+  },
+  {
+   "id": "zone:ring:0",
+   "role": "tick",
+   "file": "tick_1.wav",
+   "visual_s": 19.7667,
+   "file_start_s": 19.7655,
+   "gain_db": -12.78,
+   "limiter_db": -1.2
+  },
+  {
+   "id": "zone:ring:1",
+   "role": "tick",
+   "file": "tick_2.wav",
+   "visual_s": 19.9,
+   "file_start_s": 19.8988,
+   "gain_db": -13.6,
+   "limiter_db": -0.8
+  },
+  {
+   "id": "zone:ring:2",
+   "role": "tick",
+   "file": "tick_3.wav",
+   "visual_s": 20.0333,
+   "file_start_s": 20.0321,
+   "gain_db": -12.92,
+   "limiter_db": -1.0
+  },
+  {
+   "id": "zone:ring:3",
+   "role": "tick",
+   "file": "tick_1.wav",
+   "visual_s": 20.1667,
+   "file_start_s": 20.1655,
+   "gain_db": -12.78,
+   "limiter_db": -1.2
+  },
+  {
+   "id": "zone:0.0",
+   "role": "text.long",
+   "file": "text-long_1.wav",
+   "visual_s": 20.6333,
+   "file_start_s": 20.5078,
+   "gain_db": -18.76,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "zone:1.0",
+   "role": "text",
+   "file": "text_2.wav",
+   "visual_s": 21.1667,
+   "file_start_s": 21.0862,
+   "gain_db": -18.26,
+   "limiter_db": -0.2
+  },
+  {
+   "id": "zone:flip:0",
+   "role": "chip",
+   "file": "chip_1.wav",
+   "visual_s": 20.9667,
+   "file_start_s": 20.9667,
+   "gain_db": -10.33,
+   "limiter_db": -3.6
+  },
+  {
+   "id": "zone:flip:1",
+   "role": "chip",
+   "file": "chip_2.wav",
+   "visual_s": 21.1667,
+   "file_start_s": 21.1665,
+   "gain_db": -8.59,
+   "limiter_db": -5.4
+  },
+  {
+   "id": "zone:flip:2",
+   "role": "chip",
+   "file": "chip_3.wav",
+   "visual_s": 21.3667,
+   "file_start_s": 21.3662,
+   "gain_db": -9.17,
+   "limiter_db": -4.8
+  },
+  {
+   "id": "zone:flip:3",
+   "role": "chip",
+   "file": "chip_4.wav",
+   "visual_s": 21.5667,
+   "file_start_s": 21.5662,
+   "gain_db": -8.38,
+   "limiter_db": -5.5
+  },
+  {
+   "id": "zone:wave:0",
+   "role": "tick",
+   "file": "tick_1.wav",
+   "visual_s": 22.4333,
+   "file_start_s": 22.4321,
+   "gain_db": -12.78,
+   "limiter_db": -1.2
+  },
+  {
+   "id": "zone:wave:1",
+   "role": "tick",
+   "file": "tick_2.wav",
+   "visual_s": 22.5333,
+   "file_start_s": 22.5321,
+   "gain_db": -13.6,
+   "limiter_db": -0.8
+  },
+  {
+   "id": "zone:wave:2",
+   "role": "tick",
+   "file": "tick_3.wav",
+   "visual_s": 22.6333,
+   "file_start_s": 22.6321,
+   "gain_db": -12.92,
+   "limiter_db": -1.0
+  },
+  {
+   "id": "zone:wave:3",
+   "role": "tick",
+   "file": "tick_1.wav",
+   "visual_s": 22.7333,
+   "file_start_s": 22.7321,
+   "gain_db": -12.78,
+   "limiter_db": -1.2
+  },
+  {
+   "id": "zone:out",
+   "role": "exit",
+   "file": "exit_1.wav",
+   "visual_s": 24.0667,
+   "file_start_s": 23.8462,
+   "gain_db": -13.74,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "why:0.0",
+   "role": "text.long",
+   "file": "text-long_3.wav",
+   "visual_s": 24.2333,
+   "file_start_s": 24.1468,
+   "gain_db": -19.77,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "why:1.0",
+   "role": "text",
+   "file": "text_4.wav",
+   "visual_s": 24.8667,
+   "file_start_s": 24.7862,
+   "gain_db": -17.19,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "why:whatsapp",
+   "role": "ding.wa",
+   "file": "ding-wa_1.wav",
+   "visual_s": 25.4,
+   "file_start_s": 25.3955,
+   "gain_db": -10.8,
+   "limiter_db": -3.1
+  },
+  {
+   "id": "why:flood:0",
+   "role": "ding.wa",
+   "file": "ding-wa_1.wav",
+   "visual_s": 26.2667,
+   "file_start_s": 26.2622,
+   "gain_db": -15.1,
+   "limiter_db": -0.0
+  },
+  {
+   "id": "why:flood:1",
+   "role": "ding.wa",
+   "file": "ding-wa_1.wav",
+   "visual_s": 26.6,
+   "file_start_s": 26.5955,
+   "gain_db": -15.32,
+   "limiter_db": -0.0
+  },
+  {
+   "id": "why:flood:2",
+   "role": "ding.wa",
+   "file": "ding-wa_1.wav",
+   "visual_s": 26.9,
+   "file_start_s": 26.8955,
+   "gain_db": -15.54,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "why:flood:3",
+   "role": "ding.wa",
+   "file": "ding-wa_1.wav",
+   "visual_s": 27.1667,
+   "file_start_s": 27.1622,
+   "gain_db": -15.77,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "why:flood:4",
+   "role": "ding.wa",
+   "file": "ding-wa_1.wav",
+   "visual_s": 27.4,
+   "file_start_s": 27.3955,
+   "gain_db": -15.99,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "why:flood:5",
+   "role": "ding.wa",
+   "file": "ding-wa_1.wav",
+   "visual_s": 27.6,
+   "file_start_s": 27.5955,
+   "gain_db": -16.21,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "why:flood:6",
+   "role": "ding.wa",
+   "file": "ding-wa_1.wav",
+   "visual_s": 27.7667,
+   "file_start_s": 27.7622,
+   "gain_db": -16.43,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "why:flood:7",
+   "role": "flood",
+   "file": "flood_1.wav",
+   "visual_s": 27.9333,
+   "file_start_s": 27.9288,
+   "gain_db": -16.65,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "why:flood:8",
+   "role": "flood",
+   "file": "flood_1.wav",
+   "visual_s": 28.0667,
+   "file_start_s": 28.0622,
+   "gain_db": -16.87,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "why:flood:9",
+   "role": "flood",
+   "file": "flood_1.wav",
+   "visual_s": 28.2,
+   "file_start_s": 28.1955,
+   "gain_db": -17.09,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "why:flood:10",
+   "role": "flood",
+   "file": "flood_1.wav",
+   "visual_s": 28.3,
+   "file_start_s": 28.2955,
+   "gain_db": -17.31,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "why:flood:11",
+   "role": "flood",
+   "file": "flood_1.wav",
+   "visual_s": 28.4,
+   "file_start_s": 28.3955,
+   "gain_db": -17.53,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "why:flood:12",
+   "role": "flood",
+   "file": "flood_1.wav",
+   "visual_s": 28.5,
+   "file_start_s": 28.4955,
+   "gain_db": -17.76,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "why:flood:13",
+   "role": "flood",
+   "file": "flood_1.wav",
+   "visual_s": 28.6,
+   "file_start_s": 28.5955,
+   "gain_db": -17.98,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "why:flood:14",
+   "role": "flood",
+   "file": "flood_1.wav",
+   "visual_s": 28.6667,
+   "file_start_s": 28.6622,
+   "gain_db": -18.2,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "why:flood:15",
+   "role": "flood",
+   "file": "flood_1.wav",
+   "visual_s": 28.7333,
+   "file_start_s": 28.7288,
+   "gain_db": -18.42,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "why:flood:16",
+   "role": "flood",
+   "file": "flood_1.wav",
+   "visual_s": 28.8,
+   "file_start_s": 28.7955,
+   "gain_db": -18.65,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "why:flood:17",
+   "role": "flood",
+   "file": "flood_1.wav",
+   "visual_s": 28.8667,
+   "file_start_s": 28.8622,
+   "gain_db": -18.87,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "why:flood:18",
+   "role": "flood",
+   "file": "flood_1.wav",
+   "visual_s": 28.9333,
+   "file_start_s": 28.9288,
+   "gain_db": -19.09,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "why:flood:19",
+   "role": "flood",
+   "file": "flood_1.wav",
+   "visual_s": 29.0,
+   "file_start_s": 28.9955,
+   "gain_db": -19.31,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "why:flood:20",
+   "role": "flood",
+   "file": "flood_1.wav",
+   "visual_s": 29.0667,
+   "file_start_s": 29.0622,
+   "gain_db": -19.53,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "why:flood:21",
+   "role": "flood",
+   "file": "flood_1.wav",
+   "visual_s": 29.1333,
+   "file_start_s": 29.1288,
+   "gain_db": -19.76,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "why:flood:22",
+   "role": "flood",
+   "file": "flood_1.wav",
+   "visual_s": 29.2,
+   "file_start_s": 29.1955,
+   "gain_db": -19.98,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "why:flood:23",
+   "role": "flood",
+   "file": "flood_1.wav",
+   "visual_s": 29.2667,
+   "file_start_s": 29.2622,
+   "gain_db": -20.2,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "why:flood:24",
+   "role": "flood",
+   "file": "flood_1.wav",
+   "visual_s": 29.3333,
+   "file_start_s": 29.3288,
+   "gain_db": -20.42,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "why:flood:25",
+   "role": "flood",
+   "file": "flood_1.wav",
+   "visual_s": 29.4,
+   "file_start_s": 29.3955,
+   "gain_db": -20.65,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "why:flood:26",
+   "role": "flood",
+   "file": "flood_1.wav",
+   "visual_s": 29.4667,
+   "file_start_s": 29.4622,
+   "gain_db": -20.87,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "why:flood:27",
+   "role": "flood",
+   "file": "flood_1.wav",
+   "visual_s": 29.5333,
+   "file_start_s": 29.5288,
+   "gain_db": -21.09,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "already:0.0",
+   "role": "text.long",
+   "file": "text-long_2.wav",
+   "visual_s": 30.4333,
+   "file_start_s": 30.3068,
+   "gain_db": -18.45,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "already:1.0",
+   "role": "text",
+   "file": "text_2.wav",
+   "visual_s": 30.9667,
+   "file_start_s": 30.8862,
+   "gain_db": -18.26,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "already:late:0",
+   "role": "ding.wa",
+   "file": "ding-wa_1.wav",
+   "visual_s": 31.8667,
+   "file_start_s": 31.8622,
+   "gain_db": -17.8,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "already:late:1",
+   "role": "ding.wa",
+   "file": "ding-wa_1.wav",
+   "visual_s": 32.5667,
+   "file_start_s": 32.5622,
+   "gain_db": -18.8,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "already:pile-out",
+   "role": "exit",
+   "file": "exit_1.wav",
+   "visual_s": 33.2667,
+   "file_start_s": 33.0462,
+   "gain_db": -13.74,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "close:0.0",
+   "role": "text",
+   "file": "text_3.wav",
+   "visual_s": 33.5667,
+   "file_start_s": 33.5032,
+   "gain_db": -17.22,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "close:1.0",
+   "role": "text",
+   "file": "text_4.wav",
+   "visual_s": 34.0,
+   "file_start_s": 33.9195,
+   "gain_db": -17.19,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "close2:0.0",
+   "role": "text.long",
+   "file": "text-long_3.wav",
+   "visual_s": 34.7,
+   "file_start_s": 34.6135,
+   "gain_db": -19.77,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "close2:1.0",
+   "role": "text.long",
+   "file": "text-long_1.wav",
+   "visual_s": 35.2333,
+   "file_start_s": 35.1078,
+   "gain_db": -18.76,
+   "limiter_db": 0.0
+  },
+  {
+   "id": "outro:logo",
+   "role": "land",
+   "file": "land_1.wav",
+   "visual_s": 37.1333,
+   "file_start_s": 37.1621,
+   "gain_db": -12.92,
+   "limiter_db": -1.0
+  },
+  {
+   "id": "outro:clear",
+   "role": "exit",
+   "file": "exit_1.wav",
+   "visual_s": 38.6667,
+   "file_start_s": 38.4462,
+   "gain_db": -15.74,
+   "limiter_db": 0.0
+  }
+ ]
+}

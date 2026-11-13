@@ -1,0 +1,156 @@
+{
+  "kit": 1,
+  "name": "seo-ranking",
+  "sr": 48000,
+  "roles": {
+    "land": {
+      "sound": "pro_pop_in/round",
+      "takes": 1,
+      "align": "onset",
+      "level_db": -5.5,
+      "offset_ms": 30,
+      "note": "the search bar lands (launch preset's land)"
+    },
+    "key": {
+      "sound": "typing_key/clicky",
+      "takes": 12,
+      "align": "onset",
+      "level_db": -1.0,
+      "offset_ms": 8,
+      "min_gap_ms": 87,
+      "note": "one take per letter, never the same twice in a row"
+    },
+    "key.return": {
+      "sound": "typing_key/clicky",
+      "takes": 1,
+      "seed": 7,
+      "align": "onset",
+      "level_db": -0.5,
+      "offset_ms": 8,
+      "note": "Enter: same switch as the letters (typing_key/deep read as a 71 Hz thump), its own seed"
+    },
+    "pop": {
+      "sound": "ui_pop/soft",
+      "takes": 3,
+      "align": "onset",
+      "level_db": -8.0,
+      "offset_ms": 4,
+      "min_gap_ms": 114,
+      "note": "the three map results arriving"
+    },
+    "tock": {
+      "sound": "knock/wood",
+      "takes": 1,
+      "align": "onset",
+      "level_db": -1.5,
+      "offset_ms": -40,
+      "note": "your business shows up at #9, a different material than the results"
+    },
+    "chip": {
+      "sound": "ui_pop/wide",
+      "pitches": [
+        "C5",
+        "E5",
+        "G5"
+      ],
+      "align": "onset",
+      "level_db": -8.0,
+      "offset_ms": 4,
+      "note": "the three SEO pieces, a rising C major triad"
+    },
+    "whoosh.short": {
+      "sound": "whoosh_fast/crisp",
+      "takes": 1,
+      "align": "peak",
+      "edits": {
+        "dur": 0.6,
+        "apex": 0.25
+      },
+      "level_db": -5.5,
+      "offset_ms": 37,
+      "note": "jump #9 to #3, the long move"
+    },
+    "swish": {
+      "sound": "swish/flick",
+      "takes": 1,
+      "align": "peak",
+      "edits": {
+        "dur": 0.4,
+        "apex": 0.14
+      },
+      "level_db": -5.5,
+      "offset_ms": 37,
+      "note": "jump #3 to #2, the short move"
+    },
+    "bell": {
+      "sound": "mallet/glock",
+      "pitches": [
+        "C5",
+        "E5",
+        "G5",
+        "C6"
+      ],
+      "align": "onset",
+      "level_db": -8.5,
+      "offset_ms": -20,
+      "width": 0.6,
+      "note": "each new rank climbing the C pentatonic (E5, G5, C6); C5 resolves on the lockup"
+    },
+    "riser": {
+      "sound": "riser/dark",
+      "takes": 1,
+      "align": "peak",
+      "edits": {
+        "dur": 1.0
+      },
+      "level_db": -3.5,
+      "offset_ms": -67,
+      "note": "the build into #1; its peak 2 frames before the hit and cut there (sound.py), so the hit's attack is exposed"
+    },
+    "hit": {
+      "sound": "cut_hit/punch",
+      "takes": 1,
+      "align": "onset",
+      "edits": {
+        "pitch": "C2"
+      },
+      "level_db": -9.0,
+      "offset_ms": 0,
+      "note": "#1, tuned to the root"
+    },
+    "ding": {
+      "sound": "notify/mid_tine",
+      "takes": 1,
+      "align": "onset",
+      "edits": {
+        "pitch": "G5"
+      },
+      "level_db": -8.5,
+      "offset_ms": 0,
+      "note": "the incoming call"
+    },
+    "ding.wa": {
+      "sound": "notify/mid_wood",
+      "takes": 1,
+      "align": "onset",
+      "edits": {
+        "pitch": "C6"
+      },
+      "level_db": -8.5,
+      "offset_ms": 0,
+      "note": "the WhatsApp message"
+    },
+    "swell": null,
+    "text": {
+      "sound": "fit/land.light/finger_phone",
+      "takes": 4,
+      "align": "onset",
+      "level_db": -8.0,
+      "offset_ms": 0,
+      "note": "untuned soft taps, a new take per word (crisp / minimal's text): the C4-G4 plucks read as 'chiptune, plucked synth arpeggio'"
+    }
+  },
+  "off": {
+    "swell": "one build per film (earshot's launch rule): the riser into #1 is the one; the closing line resolves on the plucks"
+  }
+}

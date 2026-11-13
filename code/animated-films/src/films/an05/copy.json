@@ -1,0 +1,27 @@
+{
+  "beats": {
+    "hook": { "lines": ["¿Te pasaron XXX.XXX", "por una página web?"], "gold": ["XXX.XXX"] },
+    "mine": { "lines": ["Yo cobro X.XXX.XXX."], "gold": ["X.XXX.XXX."] },
+    "explain": { "lines": ["Te explico la diferencia", "con algo que ya conocés."] },
+    "house": { "lines": ["Ponele que vas a", "construir tu casa."] },
+    "both": { "lines": ["Una constructora barata y una cara", "te entregan las dos una casa."] },
+    "outside": { "lines": ["Y por fuera,", "las dos se ven bien."], "gold": ["bien."] },
+    "move": { "lines": ["La diferencia aparece", "cuando te mudás."], "gold": ["mudás."] },
+    "same": { "lines": ["Con una página web", "pasa lo mismo."] },
+    "cheap": { "lines": ["La barata es una plantilla", "con tu logo. Se ve bien,"] },
+    "leave": { "lines": ["pero la gente entra, no entiende", "qué vendés, y se va."], "gold": ["se", "va."] },
+    "plans": { "lines": ["La nuestra arranca", "por los planos."], "gold": ["planos."] },
+    "interview": { "lines": ["Primero te entrevisto para entender", "qué vendés y por qué te eligen."] },
+    "write": { "lines": ["Con eso escribimos cada texto, para", "que la gente te entienda en", "3 segundos y te escriba."], "gold": ["3", "segundos"] },
+    "designs": { "lines": ["Después, 3 diseños para elegir,", "y en 14 días está en el aire."], "gold": ["3", "14"] },
+    "moral": { "lines": ["Más barato", "puede salir caro."], "center": true, "top": 960, "max": 110, "goldLines": [1] }
+  },
+  "tags": { "cheap": "XXX.XXX", "ours": "X.XXX.XXX" },
+  "labels": { "ours": "La nuestra", "cheap": "La barata", "plans": "Planos" },
+  "template": { "welcome": "Bienvenidos a nuestra web", "para": "Somos una empresa líder con años de experiencia brindando soluciones integrales a nuestros clientes.", "more": "Leer más", "footer": ["Inicio", "Nosotros", "Servicios", "Contacto"] },
+  "counter": { "zero": "0 mensajes", "some": "mensajes" },
+  "ours": { "brand": "Tu negocio", "nav": ["Obras", "Servicios", "Contacto"], "headline": "Casas llave en mano en Asunción", "sub": "Precio cerrado y fecha de entrega, desde el primer día.", "button": "Escribinos", "services": ["Casas llave en mano", "Reformas y ampliaciones", "Dirección de obra"] },
+  "chips": ["¿Qué vendés?", "¿Por qué te eligen?"],
+  "messages": ["Hola, quiero presupuestar mi casa", "Buenas, ¿hacen ampliaciones?", "Hola, vi su página. ¿Tienen fecha para marzo?"],
+  "end": { "lines": ["Escribime el nombre", "de tu negocio y te muestro", "cómo sería la tuya."], "price": "X.XXX.XXX", "sub": "Tu página, lista en 14 días.", "cta": "Escribinos por WhatsApp" }
+}

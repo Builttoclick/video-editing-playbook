@@ -1,0 +1,24 @@
+{
+  "beats": {
+    "cost": { "lines": ["¿Cuánto cuesta", "una página web?"], "center": true, "top": 860, "max": 84 },
+    "ready": { "lines": ["y está lista en 14 días."], "gold": ["14", "días."], "top": 880 },
+    "show": { "lines": ["Te muestro qué pasa", "en esos 14 días."], "gold": ["14", "días."] },
+    "day1": { "lines": ["Día 1: una llamada."], "gold": ["Día", "1:"] },
+    "call": { "lines": ["Me contás qué vendés, a quién,", "y qué te hace distinto", "de tu competencia."] },
+    "texts": { "lines": ["Con eso escribimos nosotros", "todos los textos, pensando en cómo", "te busca la gente en Google."], "gold": ["Google."] },
+    "designs": { "lines": ["Después te mostramos 3 propuestas", "de diseño, y elegís", "la que más te guste."], "gold": ["3", "propuestas"] },
+    "build": { "lines": ["Armamos las 8 páginas, conectamos", "tu dominio y tus correos, y dejamos", "todo listo para Google."], "gold": ["8", "páginas,"] },
+    "day14": { "lines": ["Y el día 14, tu página está en el", "aire, con cada botón abriendo", "tu WhatsApp."], "gold": ["día", "14,"] },
+    "you": { "lines": ["Vos nos contás tu negocio y elegís", "un diseño. Del resto nos", "encargamos nosotros."], "gold": ["Vos", "nosotros."] }
+  },
+  "price": "X.XXX.XXX",
+  "callCard": { "title": "Llamada", "sub": "Día 1 - 40 minutos", "chips": ["¿Qué vendés?", "¿A quién?", "¿Qué te hace distinto?"] },
+  "query": "electricista industrial asunción",
+  "page": { "brand": "Tu negocio", "nav": ["Servicios", "Obras", "Contacto"], "headline": "Electricidad industrial en Asunción", "sub": "Tableros, instalaciones y mantenimiento para empresas.", "button": "Escribinos", "services": ["Tableros eléctricos", "Instalaciones industriales", "Mantenimiento"] },
+  "pages": ["Inicio", "Servicios", "Tableros", "Instalaciones", "Mantenimiento", "Obras", "Nosotros", "Contacto"],
+  "connect": [".com.py", "Tus correos", "Google"],
+  "messages": ["Hola, necesito un presupuesto para un tablero.", "Buenas, ¿hacen mantenimiento en fábricas?"],
+  "you": { "title": "Vos", "items": ["Tu negocio", "Un diseño"] },
+  "we": { "title": "Nosotros", "items": ["Los textos", "8 páginas", "Dominio", "Correos", "Google", "WhatsApp"] },
+  "end": { "lines": ["Escribime el nombre de tu", "negocio y te mando un video", "mostrándote cómo sería la tuya."], "price": "X.XXX.XXX", "sub": "Tu página, lista en 14 días.", "cta": "Escribinos por WhatsApp" }
+}

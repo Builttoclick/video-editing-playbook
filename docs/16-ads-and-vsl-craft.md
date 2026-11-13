@@ -102,6 +102,24 @@ A VSL (video sales letter) here is the 2 to 3 minute video on the landing page, 
 - **Invented examples read high-end** (a construction company, an accounting firm), because the example tells the
   viewer who the service is for.
 
+## Animated ads and coded explainers (November)
+
+The same scripts can run as a talking head or as a film made only of graphics and sound effects, with the script on
+screen word by word. We built eight 40-second scripts, one framework each (problem-agitate-solve, hook-story-offer, a
+process, an analogy, risk reversal, a challenge to the viewer, a number, objections answered as a chat), and made them
+both ways so a test reads the format, not the script. How: [20](20-animated-films.md), sound: [19](19-sound-effects.md).
+
+- **Length:** Joaquín's ad takes run 4.85 words per second, so 40 seconds is 115 to 150 words.
+- **Pace on screen:** Joaquín reads fast and found the first 40-second explainer slow. Hold a headline for about its
+  reading time (words / 4 + 0.5 s), type at about 15 letters a second, and spend the saved seconds on substance: the
+  real searches people type (a suggestions dropdown), a one-line meaning under each point, a before and after.
+- **A payoff that blows up lands:** one WhatsApp message, then a flood with a 99+ counter.
+- **A gag needs a close-up and a sound.** The "seen" ticks turning blue were too small twice; it worked as a glass lens
+  magnifying them 4.4 times, with one dry knock.
+- **Retention per second is in the API:** `video_play_curve_actions` at ad level gives 22 values, the share of plays
+  still watching at seconds 0 to 14, then 15 to 20, 20 to 25, 25 to 30, 30 to 40, 40 to 50, 50 to 60 and 60+. Plays are
+  about 95 % of impressions (autoplay), so the curve reads almost per impression.
+
 ## "Made with AI" explainers
 
 When someone shows a video "made fully with AI" that has interface, text and numbers in it, it is almost always coded

@@ -1,0 +1,21 @@
+{
+  "fps": 30,
+  "frames": 300,
+  "query": "constructora",
+  "f": {
+    "barIn": 6,
+    "type0": 15,
+    "charStep": 3,
+    "enter": 54,
+    "rows": [60, 64, 68],
+    "gap": 72,
+    "mine": 76,
+    "chips": [96, 132, 165],
+    "jumps": [[105, 117], [141, 149], [178, 186]],
+    "chipsOut": 198,
+    "notifs": [207, 222],
+    "barOut": 237,
+    "words": [243, 248, 253, 258],
+    "logo": 273
+  }
+}

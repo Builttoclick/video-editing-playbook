@@ -121,6 +121,43 @@ marker, quit"). It takes a minute and gives the exact format CapCut writes. Much
    take a compound with captions. Worked, but wrote gigabytes of clips.
 4. **Now (Mac):** the raw file and the mic file inside every compound, nothing written but JSON.
 
+## The same flow for a daily short (November)
+
+Joaquín also posts a talking-head short every day, filmed on the phone's own camera app (HDR). The pre-edit is the
+same idea at a smaller scale: a CapCut project written as JSON on top of the original files, so Joaquín opens it, checks
+it, and exports. What that series added:
+
+- **The original file goes into CapCut, never a re-encode.** "I already know that experience... the colour changes."
+  The media go in as byte-identical APFS clones (`cp -c`) inside a folder CapCut's sandbox can read. Every cut, the
+  audio work and the captions are made inside CapCut.
+- **Never show Joaquín an un-tonemapped frame of an HDR (HLG) clip.** It looks washed out and reads as a broken file.
+  On the Mac, `ffmpeg -ss T -i SRC -t 0.4 -map 0:v:0 -c copy seg.mov` then `qlmanage -t seg.mov` gives a correct
+  thumbnail.
+- **Audio in stages, never one flat gain.** "Not the whole clip at plus 5... do it in stages, split where there are
+  section cuts." Each section to the same loudness, then the whole cut to about -12 LUFS behind a -1 dBTP limiter.
+  A sound that is the point of a moment (an alarm in shot) is kept at speed 1 with its own level against the voice
+  before the compressor: -8 dB lands about 3 dB under the voice in the output, -5 dB only 1.2 dB under, because a
+  voice takes more compression than a tone.
+- **Captions:** native CapCut text, Poppins 30 bold italic, spacing -1, the "Bounce Out" animation, one word at a time,
+  at y -0.56 on a talking head and at the top (+0.60) when the shot is a desk or a page, so they never cover what is
+  being written.
+- **A note on screen is a small image, not a CapCut text object.** Joaquín's verdict on big text cards: "they look really
+  bad, they cover almost the whole screen." Render it as a small ProRes 4444 MOV with alpha (Poppins Bold 34 px,
+  white, soft shadow, top right) on a picture-in-picture track.
+- **Notes to the editor are spoken on the take** ("you'll see how to cut it there... that's for the editor"). Read the
+  whole transcript, apply every note, and drop the aside from the cut.
+- **A long single take has a ceiling:** about 4 minutes ("more than 6 is excessive"), and a point said nine times is
+  kept once. Moments with no words (a pan sizzling) stay as short muted, sped-up pieces, or at speed 1 when the
+  ambient sound is the point.
+- **Read Joaquín's verdict from the project Joaquín saved.** CapCut's export cannot be driven, but the saved draft can
+  be read: take the main video track (the one with the most segments), list each segment's
+  `target_timerange.duration / 1e6`, and diff it with difflib against the plan's `cut_out - cut_in`. Equal lists mean
+  untouched; a missing piece is a line Joaquín deleted. What Joaquín deleted so far: a hook that only repeated the next
+  clip's first line, a tangent with a meta line ("I'm going to change the analogy"), and a line that gave the
+  conclusion right before the question that sets it up. Never an edge, a caption or the audio.
+- **When Joaquín trims and exports, Joaquín's file loses whatever lives only in our renderer.** Diff the saved draft against
+  the plan, apply the deletions to the plan, re-render, and keep Joaquín's export next to it instead of deleting it.
+
 ## Housekeeping
 
 - CapCut's cache is all derived data and can grow to many gigabytes (720p proxies of every long source, about 60 % of

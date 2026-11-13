@@ -1,7 +1,8 @@
 # Video Editing Playbook
 
 How we edit talking-head video with an AI agent and code: ads, a sales video for a landing page, the motion graphics
-in 3D, from the raw phone take to the file you upload. With the real videos, the real numbers and the code we ran.
+in 3D, animated films with no camera, and sound effects made in code, from the raw phone take to the file you upload.
+With the real videos, the real numbers, the code we ran and every sound effect as a file.
 
 This is how [Built to Click](https://builttoclick.com), a small web agency in Paraguay, edits its own videos.
 Joaquín, the founder, records. **Claude** (Anthropic's Claude Code, running on a MacBook) does the work that used to eat
@@ -10,8 +11,15 @@ choosing the takes, cutting on the waveform, writing the CapCut project, coding 
 masters, compressing for phones, and checking every file before anyone watches it. Joaquín keeps every creative call.
 
 **Start with the docs.** The decisions, the numbers and the mistakes are the part that takes time. **The code is in
-[`code/`](code)**, sanitized, if you want to start from it. Text and code are CC0, take anything. The videos are ours:
-watch them, do not reuse them ([LICENSE](LICENSE)).
+[`code/`](code)**, sanitized, if you want to start from it. **The sound effects are in [`sounds/`](sounds)**: the
+whole code-made bank and our approved kit, ready to drop into any editor. Text, code and sounds are free to take
+([LICENSE](LICENSE)). The videos are ours: watch them, do not reuse them.
+
+**New in November 2026:** sound effects made in code and checked by an agent that cannot hear
+([19](docs/19-sound-effects.md)), animated films made only of coded graphics ([20](docs/20-animated-films.md)), coded
+overlays behind the speaker on talking-head ads ([21](docs/21-coded-overlays-on-talking-head.md)), Joaquín's cut rule
+measured on the waveform ([06](docs/06-cut-points.md)), what Meta really does with an upload ([14](docs/14-masters-and-web.md)),
+and about 40 new field notes ([17](docs/17-field-notes.md)).
 
 ---
 
@@ -24,7 +32,14 @@ All of these were edited with what is in this repo. **[Watch them all on one pag
 | [![VSL v2](examples/images/poster-vsl-v2.jpg)](https://builttoclick.github.io/video-editing-playbook/#vsl) | [![Raw take vs finished](examples/images/poster-raw-vs-final.jpg)](https://builttoclick.github.io/video-editing-playbook/#raw-vs-final) | [![Ad V6-01](examples/images/poster-ad-V6-01.jpg)](https://builttoclick.github.io/video-editing-playbook/#ads) |
 | **The VSL** (2:23). Recorded in one take of 17:50, pre-edited by code, cut by Joaquín, every graphic coded in React the next morning. [MP4](examples/videos/vsl-v2.mp4) | **Raw vs finished**, the first 10 s, frame for frame. [MP4](examples/videos/raw-vs-final.mp4) | **Three Meta ads** from one shoot, overlays from Claude Design. [V6-01](examples/videos/ad-V6-01.mp4), [V6-03](examples/videos/ad-V6-03.mp4), [V6-04](examples/videos/ad-V6-04.mp4) |
 
+| | | |
+|---|---|---|
+| [![Animated ad](examples/images/poster-animated-right-now.jpg)](https://builttoclick.github.io/video-editing-playbook/#animated) | [![Local SEO explainer](examples/images/poster-explainer-local-seo.jpg)](https://builttoclick.github.io/video-editing-playbook/#animated) | [![ChatGPT story](examples/images/poster-animated-chatgpt-story.jpg)](https://builttoclick.github.io/video-editing-playbook/#animated) |
+| **Four animated ads** (37 to 41 s), no camera: coded graphics, the script on screen, sound effects made in code. [1](examples/videos/animated-right-now.mp4), [2](examples/videos/animated-chatgpt-story.mp4), [3](examples/videos/animated-three-second-test.mp4), [4](examples/videos/animated-night-shift.mp4) | **A 40 s explainer**, local SEO, with the WhatsApp flood. [MP4](examples/videos/explainer-local-seo.mp4) | **The first sound test**, 10 s, the mix that became the starting kit. [MP4](examples/videos/sfx-test-ranking.mp4) |
+
 ![Eight moments of the VSL](examples/images/vsl-strip.jpg)
+
+![Eight moments of the animated films](examples/images/animated-strip.jpg)
 
 **Joaquín's name in 3D sits behind the head of the person saying it.** Every graphic is rendered as two layers, and a
 person mask from Apple Vision cuts the speaker out of the back one, frame by frame ([how](docs/11-motion-graphics-in-code.md)):
@@ -53,7 +68,9 @@ What the videos say is in Spanish (Paraguay). Everything here is in English.
 7. **Overlays,** designed in Claude Design and rendered locally with real alpha ([10](docs/10-overlays-claude-design.md)),
    or **coded** in Remotion with 3D and elements behind the speaker ([11](docs/11-motion-graphics-in-code.md)), placed
    back inside the compounds of Joaquín's own cut.
-8. **Sound:** noise reduction when the room allows it, effects tied to events, -14 LUFS. ([12](docs/12-sound.md))
+8. **Sound:** noise reduction when the room allows it, -14 LUFS, and sound effects from a bank made in code, each one
+   aimed at its frame from the same cue sheet as the picture and checked by tools that listen for the agent.
+   ([12](docs/12-sound.md), [19](docs/19-sound-effects.md))
 9. **Export** frame-exact masters (HD and native 4K), BT.709 tagged, then a web file that plays well on phones.
    ([14](docs/14-masters-and-web.md))
 10. **QA** every file with numbers and contact sheets before anyone watches it, and say what could not be checked.
@@ -61,6 +78,11 @@ What the videos say is in Spanish (Paraguay). Everything here is in English.
 
 When someone wants finished MP4s without opening an editor, steps 4 and 5 end in an edit decision list and code
 renders the ads with snap zooms, captions, callouts and sound effects instead ([13](docs/13-finished-render.md)).
+Graphics can also go behind the speaker on those renders, through person masks ([21](docs/21-coded-overlays-on-talking-head.md)).
+
+And when a script needs the screen more than a face, there is no camera at all: one Remotion codebase turns a copy
+file and a cue module into a vertical film, with the script on screen word by word and every sound from the bank
+([20](docs/20-animated-films.md)).
 
 ## How it fits together
 
@@ -97,6 +119,9 @@ flowchart LR
 8. **Exact frame counts and exact durations everywhere.** Check that frame `i` sits at `i/30`, or audio drifts.
 9. **Say BT.709 out loud** on every decode and encode.
 10. **Measure every file and say what you could not check.** Claude cannot hear, so the sound always needs human ears.
+11. **Whatever overlaps the speaker goes behind them,** through a person mask. Captions are never covered.
+12. **Everything lives inside Meta's 4:5 band** (y 285 to 1635 of a 1080x1920 frame), or the feed crops it away.
+13. **One cue sheet drives both the picture and the sound,** so they cannot drift apart.
 
 The long list, one line per mistake we made: [17. Field notes](docs/17-field-notes.md).
 
@@ -112,6 +137,7 @@ The long list, one line per mistake we made: [17. Field notes](docs/17-field-not
 | Human edit | CapCut desktop (projects written by our Python) | free |
 | Designed overlays | Claude Design, rendered locally with alpha | Claude subscription |
 | Coded motion graphics | Remotion 4 + CSS 3D + Apple Vision person masks | free for teams of up to 3 |
+| Sound effects | [earshot](https://github.com/Leonxlnx/earshot): 252 sounds made in code, plus listening tools | free (MIT) |
 | Everything else | ffmpeg 9, Python (numpy, scipy, OpenCV, Pillow), Node 22 | free |
 
 Versions and setup: [18. Tools and costs](docs/18-tools-and-costs.md).
@@ -126,6 +152,11 @@ Versions and setup: [18. Tools and costs](docs/18-tools-and-costs.md).
 - **Sync:** within 1 ms per take; the phone and the Mac drift 10 ms every 1000 s.
 - **Transcription:** a 44-minute file in 59 s; 21 takes in parallel in 6.5 s.
 - **Person masks:** about 10 frames per second on an M1 Pro (1,459 masks in about 2 minutes).
+- **Seven animated films** (37 to 49 s each) built in one night from one codebase, every element inside the 4:5 band,
+  checked frame by frame and by earshot's sync timeline.
+- **Sound sync:** after trimming the 2112 AAC priming samples, 90 % of the effects in a film landed within one frame of
+  their cue (median 17 ms); before the trim, 47 %.
+- **What Meta plays:** 4 copies of every ad, 360p to 1080p; Meta's own score for our best copy, 91 to 96 out of 100.
 - **A bug the checks caught:** the first 4K master was 0.47 s short (the picture drifting ahead of the voice), with
   every frame present. It would have shipped without a frame-by-frame timestamp check ([14](docs/14-masters-and-web.md)).
 
@@ -133,7 +164,7 @@ Versions and setup: [18. Tools and costs](docs/18-tools-and-costs.md).
 
 | # | Doc | |
 |---|---|---|
-| 1 | [The pipeline, end to end](docs/01-the-pipeline.md) | who does what, the three paths out of one recording |
+| 1 | [The pipeline, end to end](docs/01-the-pipeline.md) | who does what, the five paths out of one recording (or none) |
 | 2 | [Recording](docs/02-recording.md) | the camera, the mic recorder that does not drop audio, the room, the script on set |
 | 3 | [Ingest and sync](docs/03-ingest-and-sync.md) | off the iPhone over USB, sync by waveform with no clap |
 | 4 | [Transcription](docs/04-transcription.md) | Scribe, the call, the cost, the five ways it lies about time |
@@ -151,6 +182,9 @@ Versions and setup: [18. Tools and costs](docs/18-tools-and-costs.md).
 | 16 | [Ad and VSL craft](docs/16-ads-and-vsl-craft.md) | structure, pacing, measuring hooks, what won |
 | 17 | [Field notes](docs/17-field-notes.md) | everything that cost us time, one line each |
 | 18 | [Tools and costs](docs/18-tools-and-costs.md) | versions, speeds, setup |
+| 19 | [Sound effects made in code](docs/19-sound-effects.md) | earshot, the bank, the kit, levels, sync, Joaquín's taste, the 44 ms trap |
+| 20 | [Animated films](docs/20-animated-films.md) | one codebase, the script on screen, the kit of pieces, the 4:5 band |
+| 21 | [Coded overlays on a talking head](docs/21-coded-overlays-on-talking-head.md) | behind the speaker, the overlay rules, the cut taste, export to Meta |
 | | [Research](docs/research.md) | the open-source editors and write-ups we learned from |
 
 ## The code
@@ -161,12 +195,19 @@ Versions and setup: [18. Tools and costs](docs/18-tools-and-costs.md).
 | [`code/capcut-pre-edit/`](code/capcut-pre-edit) | sync, transcribe, repair, plan cut points, write and validate a CapCut project, relink for the Mac |
 | [`code/vsl-motion/`](code/vsl-motion) | the Remotion project of the VSL, person masks, compositor, masters, placement into CapCut |
 | [`code/overlays-claude-design/`](code/overlays-claude-design) | render a Claude Design code bundle with real alpha, unmix a magenta video |
+| [`code/sound-effects/`](code/sound-effects) | our mixer on top of earshot, the balance and under-voice checks, the approved kit definitions, a real cue sheet |
+| [`code/animated-films/`](code/animated-films) | the Remotion project of the animated films: copy files, cue modules, the kit of pieces, the mixer, QA with the 4:5 sheet |
+| [`code/talking-head-double/`](code/talking-head-double) | the same graphics behind Joaquín's head on a real take: EDL cut, person masks, empty-chair plate, sound under the voice |
+| [`code/meta-export/`](code/meta-export) | join ad pieces frame-exact with the transition in code, and rewrite exports losslessly into Meta-ready files |
+| [`sounds/`](sounds) | the sound files: every sound of earshot's bank rendered once, and our approved kit as WAV |
 
 ## What is not here
 
 No API keys, no client names, no prices, no account ids, no internal paths. Not our CapCut template projects (they
 point at our footage), not third-party logos (`code/vsl-motion/public/` has placeholders), not the raw footage.
-The example ads are ones that do not mention a price.
+The example ads are ones that do not mention a price, and the animated films stop before their end card, which does.
+No third-party sound recordings (every file in `sounds/` was rendered from code). Our logo and Joaquín's photo inside
+the code are replaced by placeholders.
 
 ## Related
 
@@ -176,6 +217,7 @@ The example ads are ones that do not mention a price.
 
 ## License
 
-Text and code: [CC0 1.0](LICENSE), no attribution needed. The videos and images in `examples/`, the Built to Click
+Text and code: [CC0 1.0](LICENSE), no attribution needed. The sounds in `sounds/` are rendered by earshot's code (MIT,
+its notice is in [`sounds/`](sounds)); our part of them is CC0 too. The videos and images in `examples/`, the Built to Click
 name and logo, and Joaquín's face and voice are not part of that dedication: they are here to show the result. See
 [LICENSE](LICENSE).

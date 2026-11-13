@@ -1,6 +1,6 @@
 # The code
 
-A sanitized snapshot of the scripts we ran on real videos in September and October 2026. Our folders, keys, CapCut
+A sanitized snapshot of the scripts we ran on real videos between September and November 2026. Our folders, keys, CapCut
 project names and client data were replaced by settings, environment variables or placeholders. Nothing here syncs
 with what we run; it is a copy for reading and starting from.
 
@@ -10,6 +10,10 @@ with what we run; it is a copy for reading and starting from.
 | [`capcut-pre-edit/`](capcut-pre-edit) | the CapCut pre-edit for a shoot: sync, transcribe, repair, read, plan cut points, write the CapCut project, validate, relink for the Mac sandbox | the analysis steps yes; the project writer needs template projects from your own CapCut (see its README) |
 | [`vsl-motion/`](vsl-motion) | the Remotion project that made the VSL's motion graphics, the person masks, the compositor, the masters, the CapCut placement | the scenes render in Remotion as is; the rest needs your footage and your CapCut project |
 | [`overlays-claude-design/`](overlays-claude-design) | rendering a Claude Design code bundle locally with real alpha; unmixing a magenta video into ProRes 4444 | yes, on a Design export |
+| [`sound-effects/`](sound-effects) | our mixer and checks on top of earshot's code-made sound bank, the approved kits, a real cue sheet | yes, with earshot installed (the rendered sounds are in [`../sounds/`](../sounds)) |
+| [`animated-films/`](animated-films) | the Remotion project behind the animated films: one copy file and one cue module per film, the kit of pieces, the mixer, QA with the 4:5 sheet | the films render as is after `npm install`; prices are placeholders |
+| [`talking-head-double/`](talking-head-double) | the same graphics behind a real take: the cut from an EDL, person masks, the empty-chair plate, sound under the voice | needs your footage, your EDL and the edit-pipeline renderer |
+| [`meta-export/`](meta-export) | joining ad pieces frame-exact with the transition in code, and the lossless rewrite into Meta-ready files | yes, with ffmpeg |
 
 ## What is not here, on purpose
 
@@ -17,7 +21,10 @@ with what we run; it is a copy for reading and starting from.
 - **Our CapCut template projects.** The project writer clones objects from projects CapCut itself saved. Those contain
   our footage paths, so make your own (a 20-second throwaway project per object, see
   [`capcut-pre-edit/README.md`](capcut-pre-edit/README.md)).
-- **Logos.** `vsl-motion/public/` holds placeholder SVGs with the same file names. Drop in your own.
+- **Logos and photos.** `vsl-motion/public/`, `animated-films/public/` and `talking-head-double/public/` hold placeholders
+  with the same file names (our logo, Joaquín's photo, third-party logos). Drop in your own.
+- **Prices.** Our ads say our price; here every amount is a placeholder like `X.XXX.XXX`.
+- **Sound files inside the projects.** The kits point at rendered takes; the takes themselves are in [`../sounds/`](../sounds).
 - **Icons.** `vsl-motion/src/data/icons.json` is generated from the Iconify packages with `node tools/icons.cjs`.
 - **Fonts.** Poppins comes from Google Fonts or `@fontsource/poppins`.
 - **Footage, masks, renders.** Regenerable, and large.

@@ -1,0 +1,40 @@
+{
+  "beats": {
+    "hook": { "lines": ["Ahora mismo, alguien está", "escribiendo en Google", "exactamente lo que vos vendés."], "gold": ["Ahora", "mismo,"] },
+    "enter": { "lines": ["Entra al primero", "que le aparece."] },
+    "three": { "lines": ["En 3 segundos entiende qué hacen,", "ve las casas que terminaron,", "y toca el botón de WhatsApp."], "gold": ["3", "segundos"] },
+    "other": { "lines": ["Y le escribe a ese otro."], "gold": ["otro."] },
+    "never": { "lines": ["Y vos nunca te enterás", "de que esa persona existió."], "gold": ["nunca"] },
+    "daily": { "lines": ["Esto pasa todos los días."] },
+    "while": { "lines": ["Mientras atendés,", "mientras manejás,", "mientras dormís."] },
+    "why": { "lines": ["¿Por qué le aparece el otro?"] },
+    "because": { "lines": ["Porque tiene una página que", "le explica a Google qué hace,", "dónde y para quién."], "gold": ["qué", "hace,", "dónde", "para", "quién."] },
+    "we": { "lines": ["Nosotros te hacemos", "esa página en 14 días."], "gold": ["14", "días."] },
+    "process": { "lines": ["Te entrevisto, escribimos todos", "los textos, elegís entre 3 diseños,", "y el día 14 tu página está en el aire."], "gold": ["3", "14"] },
+    "next": { "lines": ["Para que la próxima vez,", "el que busca te encuentre a vos."], "gold": ["vos."] }
+  },
+  "query": "constructora en asunción",
+  "suggestions": ["constructora en asunción", "constructora en asunción precios", "constructora casas llave en mano", "constructora cerca de mí"],
+  "results": [
+    { "name": "Casas Altura", "title": "Casas llave en mano en Asunción | Casas Altura", "snippet": "Construimos tu casa con precio cerrado y fecha de entrega. Obras terminadas en Asunción y Gran Asunción.", "color": "#2F6B4F" },
+    { "name": "Obras y Proyectos", "title": "Constructora en Asunción - Obras y Proyectos", "snippet": "Construcción de viviendas, reformas y ampliaciones. Más de 15 años en Asunción.", "color": "#1F4E9C" },
+    { "name": "Construcciones Sur", "title": "Construcciones Sur | Constructora en Asunción", "snippet": "Casas, dúplex y locales comerciales. Presupuesto sin cargo.", "color": "#B4552A" }
+  ],
+  "site": { "brand": "Casas Altura", "nav": ["Obras", "Servicios", "Contacto"], "headline": "Casas llave en mano en Asunción", "sub": "Precio cerrado y fecha de entrega, desde el primer día.", "button": "Escribinos", "services": ["Casas llave en mano", "Reformas y ampliaciones", "Dúplex y locales"] },
+  "checks": ["qué hacen", "las casas que terminaron", "WhatsApp"],
+  "chat": { "name": "Casas Altura", "message": "Hola, quiero presupuestar mi casa", "time": "10:42" },
+  "phones": { "you": "Vos", "other": "El otro", "person": "la persona que buscó" },
+  "vignettes": [
+    { "icon": "solar:shop-bold-duotone", "label": "Atendés" },
+    { "icon": "solar:wheel-bold-duotone", "label": "Manejás" },
+    { "icon": "solar:moon-stars-bold-duotone", "label": "Dormís" }
+  ],
+  "reads": ["qué hace", "dónde", "para quién"],
+  "steps": [
+    { "day": "Día 1", "text": "Te entrevisto" },
+    { "day": "Días 2 a 5", "text": "Escribimos todos los textos" },
+    { "day": "Días 6 y 7", "text": "Elegís entre 3 diseños" },
+    { "day": "Día 14", "text": "Tu página está en el aire" }
+  ],
+  "end": { "lines": ["Escribime el nombre", "de tu negocio y te muestro", "cómo sería la tuya."], "price": "X.XXX.XXX", "sub": "Tu página, lista en 14 días.", "cta": "Escribinos por WhatsApp" }
+}

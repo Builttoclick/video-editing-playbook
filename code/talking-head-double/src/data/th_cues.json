@@ -1,0 +1,256 @@
+{
+ "_": "Every cue of the talking-head double hangs off a word: {beat, word, nth?, off?}; word '' = the beat's first frame. src/TH.tsx (picture) and tools/th_sound.py (sound) read this same file, so a sound cannot drift from its move.",
+ "msgs": [
+  {
+   "id": "q1",
+   "side": "out",
+   "beat": "Q1",
+   "word": "hola",
+   "lines": [
+    "Hola, ¿cuánto cuesta una",
+    "página web?"
+   ]
+  },
+  {
+   "id": "a1",
+   "side": "in",
+   "beat": "A1",
+   "word": "",
+   "off": 5,
+   "lines": [
+    "X.XXX.XXX"
+   ]
+  },
+  {
+   "id": "q2",
+   "side": "out",
+   "beat": "Q2",
+   "word": "sobrino",
+   "off": -4,
+   "lines": [
+    "¿Tanto? Mi sobrino me",
+    "cobra XXX.XXX."
+   ]
+  },
+  {
+   "id": "a2a",
+   "side": "in",
+   "beat": "A2a",
+   "word": "linda",
+   "lines": [
+    "Y capaz te quede linda."
+   ]
+  },
+  {
+   "id": "a2b",
+   "side": "in",
+   "beat": "A2a",
+   "word": "gente",
+   "off": -2,
+   "lines": [
+    "Pero una página es para",
+    "que la gente te escriba."
+   ]
+  },
+  {
+   "id": "a2c",
+   "side": "in",
+   "beat": "A2b",
+   "word": "entrevista",
+   "lines": [
+    "Por eso arranco con una",
+    "entrevista: qué vendés y a quién."
+   ]
+  },
+  {
+   "id": "a2d",
+   "side": "in",
+   "beat": "A2b",
+   "word": "medida",
+   "lines": [
+    "Y con eso armamos tu",
+    "página a medida."
+   ]
+  },
+  {
+   "id": "q3",
+   "side": "out",
+   "beat": "Q3",
+   "word": "cuanto",
+   "off": -4,
+   "lines": [
+    "¿Y en cuánto me la entregás?"
+   ]
+  },
+  {
+   "id": "a3",
+   "side": "in",
+   "beat": "A3",
+   "word": "catorce",
+   "lines": [
+    "En 14 días."
+   ]
+  },
+  {
+   "id": "q5",
+   "side": "out",
+   "beat": "Q5",
+   "word": "incluye",
+   "off": -8,
+   "lines": [
+    "¿Y qué incluye?"
+   ]
+  },
+  {
+   "id": "a5",
+   "side": "in",
+   "beat": "A5",
+   "word": "ocho",
+   "list": [
+    "8 páginas",
+    "Tu dominio",
+    "Hosting",
+    "Tus correos",
+    "Preparada para Google"
+   ],
+   "listWords": [
+    "ocho",
+    "dominio",
+    "hosting",
+    "email",
+    "google"
+   ]
+  },
+  {
+   "id": "q6",
+   "side": "out",
+   "beat": "Q6",
+   "word": "como",
+   "off": -4,
+   "lines": [
+    "¿Y cómo empezamos?"
+   ]
+  },
+  {
+   "id": "a6",
+   "side": "in",
+   "beat": "A6",
+   "word": "escribime",
+   "off": 2,
+   "lines": [
+    "Escribime por WhatsApp el",
+    "nombre de tu empresa."
+   ]
+  },
+  {
+   "id": "a6b",
+   "side": "in",
+   "beat": "A6",
+   "word": "videoanalisis",
+   "lines": [
+    "Te preparo tu videoanálisis."
+   ]
+  },
+  {
+   "id": "q7",
+   "side": "out",
+   "beat": "Q7",
+   "word": "dale",
+   "lines": [
+    "Dale. ¿Y si me hacés",
+    "por XXX.XXX?"
+   ],
+   "ticksBlue": {
+    "beat": "VISTO",
+    "word": "",
+    "off": 46
+   }
+  }
+ ],
+ "beats": {
+  "price": {
+   "beat": "A1",
+   "word": "",
+   "off": 4
+  },
+  "priceSheen": {
+   "beat": "A1",
+   "word": "",
+   "off": 17
+  },
+  "priceGone": {
+   "beat": "Q2",
+   "word": "",
+   "off": -2
+  },
+  "sticker": {
+   "beat": "Q2",
+   "word": "cobra",
+   "off": 9
+  },
+  "stickerGone": {
+   "beat": "A2a",
+   "word": "",
+   "off": 4
+  },
+  "chips": [
+   {
+    "beat": "A2b",
+    "word": "venden",
+    "off": -6
+   },
+   {
+    "beat": "A2b",
+    "word": "venden",
+    "off": 2
+   }
+  ],
+  "wire": {
+   "beat": "A2b",
+   "word": "armar",
+   "off": -2
+  },
+  "wireButton": {
+   "beat": "A2b",
+   "word": "venda"
+  },
+  "wireOut": {
+   "beat": "Q3",
+   "word": "",
+   "off": -4
+  },
+  "cal": {
+   "beat": "A3",
+   "word": "catorce",
+   "off": -2
+  },
+  "calOut": {
+   "beat": "Q5",
+   "word": "",
+   "off": -2
+  },
+  "compose": {
+   "beat": "A6",
+   "word": "whatsapp",
+   "off": -2
+  },
+  "composeType": {
+   "beat": "A6",
+   "word": "nombre"
+  },
+  "composeSend": {
+   "beat": "A6",
+   "word": "preparar"
+  },
+  "composeOut": {
+   "beat": "Q7",
+   "word": "",
+   "off": -2
+  },
+  "puff": {
+   "beat": "VISTO",
+   "word": "",
+   "off": 17
+  }
+ }
+}

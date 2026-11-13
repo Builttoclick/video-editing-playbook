@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# earshot from its venv, minus the logging noise (lines like "W1103 18:02:11..." on stderr). Real errors still show:
+# they are one line, "earshot <command>: error: ...", exit 1.
+#   es sfx list --category ui_pop        es sfx render ui_pop/soft -o x.wav --pitch E5
+#   es timeline film.mp4 --cues audio/cues_earshot.json      es measure mix.wav
+# Set EARSHOT_HOME to your clone of github.com/Leonxlnx/earshot (default ~/tools/earshot).
+PY="${EARSHOT_PY:-${EARSHOT_HOME:-$HOME/tools/earshot}/.venv/bin/python}"   # earshot's venv (EARSHOT_HOME = your clone)
+if [[ ! -x "$PY" ]]; then
+  echo "es: no earshot venv at $PY (install it, or set EARSHOT_HOME to your clone)" >&2
+  exit 2
+fi
+"$PY" -m earshot "$@" 2> >(grep -v -E '^[WI][0-9]{4} ' >&2)

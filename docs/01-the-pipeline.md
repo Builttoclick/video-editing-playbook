@@ -27,16 +27,20 @@ it does not have: paste a transcript into a chatbot and ask for cuts, and you ge
 choice is written as word indices or word anchors ("from 'son las dos de la mañana' to 'durmiendo contigo'"), and code
 turns words into times and snaps them to the sound.
 
-## Three ways out of the same recording
+## The paths out of one recording
 
 | Path | When | What comes out | Doc |
 |---|---|---|---|
 | **A. CapCut pre-edit** (the default for ad shoots) | Joaquín will edit | a CapCut project: every take as a compound clip with 1.5 s handles, the clean mic synced inside, captions one word at a time in the house style, banks of takes, markers | [07](07-capcut-pre-edit.md), [08](08-capcut-draft-format.md) |
 | **B. Finished render** | someone wants MP4s without opening an editor | finished 9:16 and 4:5 MP4s from an edit decision list: snap zooms, captions, callouts, sound effects, -14 LUFS | [13](13-finished-render.md) |
 | **C. Coded motion graphics** | a piece needs real graphics (the VSL) | transparent overlays rendered from React code, placed inside the CapCut compounds, then frame-exact masters | [11](11-motion-graphics-in-code.md), [14](14-masters-and-web.md) |
+| **D. Coded overlays on a talking head** (November) | an ad series or a single ad on Joaquín's own takes | graphics behind and in front of the speaker through person masks, the cut rendered from an EDL, sound effects under the voice, Meta-ready files | [21](21-coded-overlays-on-talking-head.md), [19](19-sound-effects.md) |
+| **E. An animated film, no camera** (November) | a script that needs the screen more than a face | a vertical film made only of coded graphics with the script on screen and sound effects from a code-made bank, inside Meta's 4:5 band | [20](20-animated-films.md), [19](19-sound-effects.md) |
 
 Paths A and C combine: the VSL was pre-edited in CapCut (path A), Joaquín cut it, then the overlays were coded and put
-back inside that same timeline (path C), and the masters were exported in code from that exact cut.
+back inside that same timeline (path C), and the masters were exported in code from that exact cut. Paths D and E
+share one kit: the same script was made as a film (E) and as Joaquín on camera with the same graphics behind the head
+(D), so an ad test compares the format and not the words.
 
 ## The steps
 

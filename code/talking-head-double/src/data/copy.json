@@ -1,0 +1,29 @@
+{
+  "header": { "name": "Joaquín - Built to Click", "online": "en línea", "typing": "escribiendo...", "offline": "últ. vez hoy a las 10:49" },
+  "datePill": "Hoy",
+  "encrypted": "Los mensajes y las llamadas están cifrados de extremo a extremo.",
+  "composeHint": "Mensaje",
+  "messages": [
+    { "id": "q1", "side": "out", "lines": ["Hola, ¿cuánto cuesta una", "página web?"], "time": "10:41" },
+    { "id": "a1", "side": "in", "lines": ["X.XXX.XXX"], "time": "10:41" },
+    { "id": "q2", "side": "out", "lines": ["¿Tanto? Mi sobrino me hace", "una por XXX.XXX."], "time": "10:42" },
+    { "id": "a2a", "side": "in", "lines": ["Y te va a quedar linda."], "time": "10:42" },
+    { "id": "a2b", "side": "in", "lines": ["El tema es que una página está", "para que la gente te escriba."], "time": "10:42" },
+    { "id": "a2c", "side": "in", "lines": ["Por eso arranco con una", "entrevista: qué vendés y a quién."], "time": "10:43" },
+    { "id": "a2d", "side": "in", "lines": ["Con eso escribimos nosotros", "cada texto."], "time": "10:43" },
+    { "id": "q3", "side": "out", "lines": ["¿Y cuánto tarda?"], "time": "10:44" },
+    { "id": "a3", "side": "in", "lines": ["14 días."], "time": "10:44" },
+    { "id": "q4", "side": "out", "lines": ["¿Y si no me gusta el diseño?"], "time": "10:45" },
+    { "id": "a4", "side": "in", "lines": ["Te mostramos 3 propuestas", "y elegís una."], "time": "10:45" },
+    { "id": "q5", "side": "out", "lines": ["¿Qué incluye?"], "time": "10:46" },
+    { "id": "a5", "side": "in", "list": ["8 páginas", "Tu dominio .com.py", "Hosting", "Tus correos", "Todo preparado para Google", "Cada botón abre tu WhatsApp"], "lines": [], "time": "10:46" },
+    { "id": "q6", "side": "out", "lines": ["¿Y cómo arrancamos?"], "time": "10:47" },
+    { "id": "a6", "side": "in", "lines": ["Escribime el nombre de tu", "negocio y te muestro cómo", "sería tu página."], "time": "10:47" },
+    { "id": "q7", "side": "out", "lines": ["Dale. ¿Y si me dejás en", "XXX.XXX?"], "time": "10:48", "typed": "Dale. ¿Y si me dejás en XXX.XXX?" }
+  ],
+  "chips": ["¿Qué vendés?", "¿A quién?"],
+  "wire": { "brand": "Constructora Altura", "nav": ["Obras", "Servicios", "Contacto"], "headline": "Casas de alta gama en Asunción", "sub": "Obra llave en mano, con fecha de entrega.", "button": "Escribinos" },
+  "calendar": { "day": "Día", "done": "Lista" },
+  "proposals": { "label": "Propuesta", "pick": "Esta" },
+  "end": { "price": "X.XXX.XXX", "line": "Tu página, lista en 14 días.", "cta": "Escribinos por WhatsApp" }
+}

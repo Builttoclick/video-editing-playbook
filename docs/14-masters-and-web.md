@@ -121,6 +121,36 @@ anyway). Audio kept at -14.3 LUFS, `moov` before `mdat` (faststart), BT.709 tagg
 The copies in this repo's [`examples/`](../examples) are smaller still (720x1280, CRF 23 capped at 1.5 Mbps), to keep
 the repository light.
 
+## Files for Meta, and what Meta does with them (November)
+
+**A Meta-ready file** has no edit list and tagged colour (BT.709 primaries, transfer and matrix written in the
+stream). Our first 37 ad exports had two edit lists and untagged transfer and primaries; a lossless rewrite
+(`-use_editlist 0` plus the tags) fixed them with the frames bit-identical ([`code/meta-export/`](../code/meta-export)).
+Two traps once the edit list is gone:
+
+- **The audio plays 44 ms late** when a file is muxed with `-use_editlist 0` and the AAC came from Apple's encoder
+  (`aac_at`): its 2112 priming samples are normally hidden by the edit list. Trim them before the encoder
+  (`-af atrim=start_sample=2112`) and check by cross-correlation, never by ear ([19](19-sound-effects.md)).
+- On another chain (the daily shorts) the same missing edit list measured 49 ms. Whatever you choose, measure the
+  decoded file against the mix once per chain.
+
+**What Meta does with your upload** (measured from the delivery manifests of live ads, November 2026):
+
+- Meta never plays the file you uploaded. Each ad gets a ladder of 4 VP9 copies: 360p at about 0.25 Mbps, 540p at
+  0.6, 720p at 1.0 to 1.3, 1080p at 1.3 to 2.0. Facebook serves the same kind of ladder.
+- Meta's own quality score for each copy is in the manifest (`FBPlaybackResolutionMos`, 0 to 100 against the upload).
+  Our best copies scored 91 to 96; the same measure on large creator and brand accounts gave 78 to 90. Nobody gets
+  more than 1080 wide on Instagram, so a 4K upload buys nothing.
+- **The phone starts on whatever copy it picked,** and the first segment is 5 s long for everyone, so the hook plays at
+  that quality. Our 360p copy scored 51 to 55: the "sent through WhatsApp" look.
+- Very popular reels get re-encoded later into 7 or 8 finer copies (or AV1). That is views, not file settings.
+- **Every file-side trick we tested changed nothing or made it worse:** the same file again (identical bitrates),
+  denoise (-1 to -3 % bitrate, same score), lifting the shadows (same), 25 fps (score 2 to 5 points lower), higher
+  upload bitrate, tags, edit lists, 1440 and 2160 uploads (the same 4 copies once processed).
+- **The real lever is light at the shoot.** 56 to 78 % of our pixels sat below luma 40 (well-lit accounts sit near
+  22 %); the low copies break a smooth dark wall into blocks. Light the wall behind the speaker or use a textured
+  background, more light on the face.
+
 ## The poster frame
 
 The poster is the first frame of the hook, and it is what a phone shows first (the page's largest paint). To avoid a

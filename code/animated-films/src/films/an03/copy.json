@@ -1,0 +1,27 @@
+{
+  "beats": {
+    "hook": { "lines": ["Un señor de Brasil le preguntó", "a ChatGPT quién le puede traer", "una grúa de Europa a Paraguay."], "gold": ["Brasil", "ChatGPT"] },
+    "name": { "lines": ["ChatGPT le dio un nombre:", "el de un cliente nuestro, un", "importador de camiones de Limpio."], "gold": ["nombre:"] },
+    "weeks": { "lines": ["Unas semanas después de", "estrenar su página, mi cliente", "me escribió esto:"] },
+    "why": { "lines": ["¿Por qué apareció?"] },
+    "because": { "lines": ["Porque ChatGPT recomienda lo que", "encuentra en internet, y su página", "explica muy bien qué hace,", "para quién y desde dónde."], "gold": ["qué", "hace,", "para", "quién", "desde", "dónde."] },
+    "nothing": { "lines": ["Si eso no está escrito en", "ningún lado, ChatGPT no tiene", "de dónde sacarte."], "gold": ["ningún", "lado,"] },
+    "we": { "lines": ["Nosotros escribimos cada texto", "de tu página después de entrevistarte,", "para que Google y ChatGPT", "entiendan qué vendés."], "gold": ["Google", "ChatGPT"] },
+    "designs": { "lines": ["Elegís entre 3 diseños,", "y en 14 días está en el aire."], "gold": ["3", "14"] }
+  },
+  "gpt": {
+    "title": "ChatGPT",
+    "question": "Quem pode trazer um guindaste da Europa para o Paraguai?",
+    "caption": "¿Quién puede traer una grúa de Europa a Paraguay?",
+    "answer": "Importadora de camiones en Limpio, Paraguay",
+    "answerSub": "Importa camiones y grúas desde Europa y entrega en todo el país.",
+    "nothing": "No encontré ninguna empresa con esa información."
+  },
+  "pins": { "br": "Brasil", "py": "Limpio, Paraguay", "eu": "Europa" },
+  "message": { "lines": ["Se comunicó conmigo un señor de Brasil.", "Quiere una grúa. Dice que buscó en", "ChatGPT, y ahí apareció."], "time": "09:14", "name": "Cliente - importador de camiones" },
+  "site": { "brand": "Importadora de camiones", "nav": ["Camiones", "Grúas", "Contacto"], "headline": "Camiones y grúas importados de Europa", "sub": "Entrega en Limpio, Paraguay, con la documentación lista.", "button": "Escribinos", "services": ["Camiones usados de Europa", "Grúas y plataformas", "Repuestos y asesoría"] },
+  "marks": { "what": "qué hace", "where": "desde dónde", "who": "para quién" },
+  "ours": { "brand": "Tu negocio", "nav": ["Servicios", "Trabajos", "Contacto"], "headline": "Herrería y portones en Luque", "sub": "Portones, rejas y estructuras, con medida y entrega en fecha.", "button": "Escribinos", "services": ["Portones y rejas", "Estructuras metálicas", "Mantenimiento"] },
+  "engines": ["Google", "ChatGPT"],
+  "end": { "lines": ["Escribime el nombre", "de tu negocio y te muestro", "cómo sería la tuya."], "price": "X.XXX.XXX", "sub": "Tu página, lista en 14 días.", "cta": "Escribinos por WhatsApp" }
+}

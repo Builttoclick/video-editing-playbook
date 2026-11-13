@@ -1,0 +1,26 @@
+{
+  "beats": {
+    "hook": { "lines": ["En las páginas que hacemos,", "casi 4 de cada 10 contactos", "llegan fuera de horario."], "gold": ["4", "de", "cada", "10"] },
+    "sunday": { "lines": ["Un domingo a la siesta,"] },
+    "tuesday": { "lines": ["o un martes a las 2", "de la mañana."], "gold": ["2"] },
+    "asleep": { "lines": ["A esa hora vos estás durmiendo."] },
+    "working": { "lines": ["Tu página sigue atendiendo:", "le muestra a esa persona", "qué hacés y dónde estás,"], "gold": ["sigue", "atendiendo:"] },
+    "touch": { "lines": ["y le deja tu WhatsApp", "a un toque."], "gold": ["un", "toque."] },
+    "morning": { "lines": ["Y a la mañana abrís", "el teléfono y está ahí:"] },
+    "we": { "lines": ["Nosotros te hacemos", "esa página en 14 días."], "gold": ["14", "días."] },
+    "process": { "lines": ["Te entrevisto, escribimos todos", "los textos, elegís entre 3 diseños,", "y queda trabajando las 24 horas."], "gold": ["24", "horas."] },
+    "write": { "lines": ["Escribime el nombre", "de tu negocio."] },
+    "even": { "lines": ["Aunque sea a las 2 de la mañana:", "te contesto apenas me levanto."], "gold": ["2", "de", "la", "mañana:"] }
+  },
+  "stat": { "big": "4 de cada 10", "sub": "contactos fuera de horario" },
+  "clock": { "sunday": "Domingo - 14:30", "tuesday": "Martes - 02:00", "night": "02:14", "morning": "Martes - 07:30" },
+  "shop": { "name": "Tu negocio", "sign": "Cerrado" },
+  "page": { "brand": "Tu negocio", "nav": ["Obras", "Servicios", "Contacto"], "headline": "Casas llave en mano en Luque", "sub": "Precio cerrado y fecha de entrega.", "button": "Escribinos", "services": ["Casas llave en mano", "Reformas", "Dirección de obra"] },
+  "reads": ["qué hacés", "dónde estás"],
+  "messages": ["Hola, quiero presupuestar mi casa.", "Buenas, ¿hacen reformas en Luque?", "Hola, vi su página. ¿Tienen fecha para marzo?"],
+  "times": ["02:14", "02:51", "06:40"],
+  "steps": ["Te entrevisto", "Todos los textos", "3 diseños"],
+  "badge": "24 h",
+  "reply": "¡Buen día! Contame de tu negocio.",
+  "end": { "lines": ["Escribime el nombre", "de tu negocio, aunque sea", "a las 2 de la mañana."], "price": "X.XXX.XXX", "sub": "Tu página, lista en 14 días.", "cta": "Escribinos por WhatsApp" }
+}

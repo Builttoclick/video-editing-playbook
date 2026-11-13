@@ -6,3 +6,15 @@ code/vsl-motion/cache/
 code/vsl-motion/out/
 code/vsl-motion/EXPORT/
 code/vsl-motion/src/data/icons.json
+code/animated-films/src/data/icons.json
+code/animated-films/out/
+code/animated-films/.snap/
+code/animated-films/audio/kit/
+code/animated-films/audio/an0*/
+code/talking-head-double/src/data/icons.json
+code/talking-head-double/out/
+code/talking-head-double/RAW/
+code/talking-head-double/audio/kit/
+code/talking-head-double/audio/th/
+code/talking-head-double/audio/*.wav
+code/talking-head-double/tools/personmask

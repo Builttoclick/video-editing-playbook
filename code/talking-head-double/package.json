@@ -1,0 +1,26 @@
+{
+  "name": "talking-head-double",
+  "version": "1.0.0",
+  "private": true,
+  "description": "One ad as a WhatsApp chat film and as a talking head with the same graphics behind the speaker (Remotion, Apple Vision person masks, LaMa)",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "postinstall": "node tools/icons.cjs"
+  },
+  "dependencies": {
+    "@fontsource/poppins": "5.2.6",
+    "@fontsource/roboto": "5.1.0",
+    "@iconify-json/ri": "1.2.5",
+    "@iconify-json/solar": "1.2.2",
+    "@remotion/bundler": "4.0.538",
+    "@remotion/cli": "4.0.538",
+    "@remotion/renderer": "4.0.538",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.538"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "typescript": "5.6.3"
+  }
+}

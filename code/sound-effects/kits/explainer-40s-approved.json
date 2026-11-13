@@ -1,0 +1,228 @@
+{
+  "kit": 1,
+  "name": "seo-local-40s",
+  "sr": 48000,
+  "roles": {
+    "land": {
+      "sound": "pro_pop_in/round",
+      "takes": 1,
+      "align": "onset",
+      "level_db": -5.5,
+      "offset_ms": 30,
+      "note": "the search bar lands; also a headline block (approved in the 10 s test)"
+    },
+    "land.big": {
+      "sound": "pro_pop_in/deep",
+      "takes": 1,
+      "align": "onset",
+      "level_db": -5.5,
+      "offset_ms": 30,
+      "note": "the map card lands, a lower body than the bar"
+    },
+    "key": {
+      "sound": "typing_key/clicky",
+      "takes": 12,
+      "align": "onset",
+      "level_db": -1.0,
+      "offset_ms": 8,
+      "min_gap_ms": 87,
+      "note": "one take per letter, never the same twice in a row (approved)"
+    },
+    "key.return": {
+      "sound": "typing_key/clicky",
+      "takes": 1,
+      "seed": 7,
+      "align": "onset",
+      "level_db": -0.5,
+      "offset_ms": 8,
+      "note": "Enter: same switch as the letters, its own seed (approved)"
+    },
+    "blip": {
+      "sound": "ui_pop/blip",
+      "takes": 1,
+      "align": "onset",
+      "level_db": -10.0,
+      "offset_ms": 4,
+      "note": "the searcher's blue dot appears on the map (rank: plausible, best of 5)"
+    },
+    "pin": {
+      "sound": "pro_pop/thup",
+      "takes": 3,
+      "align": "onset",
+      "level_db": -8.0,
+      "offset_ms": 4,
+      "note": "the three pins drop (earshot rank: best of 9 for 'a small soft pop of a map pin dropping', z +2.3)"
+    },
+    "pop": {
+      "sound": "ui_pop/soft",
+      "takes": 3,
+      "align": "onset",
+      "level_db": -8.0,
+      "offset_ms": 4,
+      "min_gap_ms": 114,
+      "note": "the three results arriving (approved)"
+    },
+    "scroll": {
+      "sound": "whoosh_fast/tight",
+      "takes": 1,
+      "align": "peak",
+      "level_db": -6.0,
+      "offset_ms": 37,
+      "note": "the page scrolls down to where your business is (rank: best of 7, reads as a fast whoosh)"
+    },
+    "tock": {
+      "sound": "knock/wood",
+      "takes": 1,
+      "align": "onset",
+      "level_db": -1.5,
+      "offset_ms": -40,
+      "note": "your business shows up at #9, a different material than the results (approved)"
+    },
+    "zip": {
+      "sound": "swish/bright",
+      "takes": 1,
+      "align": "peak",
+      "level_db": -8.0,
+      "offset_ms": 37,
+      "note": "the gold outline draws itself around the top 3 (rank: strong, reads as a fast whoosh; pro_zip/up scored +0.2 higher but reads as a record scratch)"
+    },
+    "tag": {
+      "sound": "fit/click/floss_lid",
+      "takes": 1,
+      "seed": 9,
+      "align": "onset",
+      "level_db": -8.0,
+      "offset_ms": 4,
+      "note": "the 'Top 3' tag: the film's one click voice, its own take (version 3: no pitched pop)"
+    },
+    "chip": {
+      "sound": "fit/click/floss_lid",
+      "takes": 5,
+      "align": "onset",
+      "level_db": -8.0,
+      "offset_ms": 4,
+      "note": "version 3, one dry click voice for the chips, the new ranks and the heatmap flips (no triad). Audition v3-click: z +4.0 strong for 'a crisp short plastic click', reads as 'a soft key release click', realness 0.81 (fitted from a CC0 recording); ui_pop/wide C5 read as a snare hit, realness 0.14"
+    },
+    "whoosh.short": {
+      "sound": "whoosh_fast/crisp",
+      "takes": 1,
+      "align": "peak",
+      "edits": {
+        "dur": 0.6,
+        "apex": 0.25
+      },
+      "level_db": -5.5,
+      "offset_ms": 37,
+      "note": "jump #9 to #3, the long move (approved)"
+    },
+    "swish": {
+      "sound": "swish/flick",
+      "takes": 1,
+      "align": "peak",
+      "edits": {
+        "dur": 0.4,
+        "apex": 0.14
+      },
+      "level_db": -5.5,
+      "offset_ms": 37,
+      "note": "jump #3 to #2, the short move (approved)"
+    },
+    "riser": {
+      "sound": "riser/dark",
+      "takes": 1,
+      "align": "peak",
+      "edits": {
+        "dur": 0.8
+      },
+      "level_db": -3.5,
+      "offset_ms": -67,
+      "note": "the build into #1; its peak 2 frames before the hit and cut there (sound.py) (approved)"
+    },
+    "hit": {
+      "sound": "cut_hit/punch",
+      "takes": 1,
+      "align": "onset",
+      "edits": {
+        "pitch": "C2"
+      },
+      "level_db": -9.0,
+      "offset_ms": 0,
+      "note": "#1, tuned to the root (approved)"
+    },
+    "exit": {
+      "sound": "swipe/glide",
+      "takes": 1,
+      "align": "peak",
+      "level_db": -6.0,
+      "offset_ms": 37,
+      "note": "the list slides away before the calls arrive (reads as a fast whoosh; paper, cloth and velvet read as impact hits)"
+    },
+    "ding.wa": {
+      "sound": "notify/mid_wood",
+      "takes": 1,
+      "align": "onset",
+      "edits": {
+        "pitch": "C6"
+      },
+      "level_db": -8.5,
+      "offset_ms": 0,
+      "note": "the WhatsApp message (approved)"
+    },
+    "swell": null,
+    "text": {
+      "sound": "fit/whoosh.short/bamboo_swish",
+      "takes": 4,
+      "align": "peak",
+      "edits": {
+        "dur": 0.3
+      },
+      "level_db": -8.0,
+      "offset_ms": 37,
+      "note": "version 4: one soft air swish per headline line, its peak while the first word rises (high-passed at 400 Hz in sound.py). Audition v4-text: first of 12 for 'a soft quick airy swoosh' (z +2.8, reads 'fast whoosh'), realness 0.98. The finger tap it replaced read as 'a snare drum hit' on 12 of 22 lines in the mix; Joaquín's note, translated: 'I can't tell if it is out of sync or just not a good match'"
+    },
+    "text.long": {
+      "sound": "fit/whoosh.short/bamboo_swish",
+      "takes": 3,
+      "align": "peak",
+      "edits": {
+        "dur": 0.45
+      },
+      "level_db": -8.0,
+      "offset_ms": 37,
+      "note": "the same swish, longer, for lines of 4 words or more, so it spans their cascade"
+    },
+    "tick": {
+      "sound": "pro_hover_tick/soft",
+      "takes": 3,
+      "align": "onset",
+      "level_db": -14.0,
+      "offset_ms": 0,
+      "note": "Google's suggestions, the '...' dot wave and the heatmap rings filling in (rank: plausible, a soft key release click)"
+    },
+    "flood": {
+      "sound": "notify/mid_wood",
+      "takes": 1,
+      "align": "onset",
+      "edits": {
+        "pitch": "C6",
+        "dur": 0.12
+      },
+      "level_db": -10.0,
+      "offset_ms": 0,
+      "note": "the WhatsApp blowing up, version 3: the same tone as the first message every time, like a real phone (Joaquín's note on v2, translated: 'a message tone that is monotonous, always the same'). The sparse arrivals use ding.wa itself; this short-ring take (same attack, 0.12 s) serves the arrivals packed closer than 5 frames, where full tails at one pitch fused into a held note"
+    },
+    "sweep": {
+      "sound": "swish/soft",
+      "takes": 1,
+      "align": "peak",
+      "level_db": -10.0,
+      "offset_ms": 37,
+      "note": "the gold light sweeping across the top 3 (version 2: a soft air swish where the shimmer was)"
+    }
+  },
+  "off": {
+    "swell": "one build per film (earshot's launch rule): the riser into #1 is the one",
+    "shimmers": "version 2: Joaquín did not like the fairy sparkle on the end card ('that kind of fairy sound', translated); its cousins at #1 and on the gold sweep left with it",
+    "bell": "version 3: the glock climb (E5 G5 C6, C5 on the lockup) and every pitched sequence are out. Joaquín's words on v2, translated: 'it sounds a lot like a toy keyboard, very piano, very sweet, very soft'; earshot read 0:26-0:40 of v2 as 'upbeat corporate pop music, glockenspiel', and mallet/glock C5 scores realness 0.07"
+  }
+}

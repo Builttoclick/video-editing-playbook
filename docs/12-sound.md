@@ -4,16 +4,21 @@
 an AI editor: **Claude cannot hear.** So every rule here is either a placement rule tied to something on screen, or a
 number that can be measured. Everything else is said out loud: "these are the numbers, the sound needs your ears".
 
+Since November a tool listens for it: [earshot](https://github.com/Leonxlnx/earshot) says what each sound reads as,
+whether it lands on its frame, how loud the mix is and how it compares with professional films. It measures; taste is
+still Joaquín's ear. Sound effects made in code, the kit, the mixer and those checks: [19](19-sound-effects.md).
+
 ## The voice
 
 - **The voice is always the lav mic**, synced inside the compound ([03](03-ingest-and-sync.md)). The phone's own audio
   stays muted.
 - **CapCut's Reduce noise: on by default.** Joaquín set it for every clip of the ad shoots.
-- **Enhance voice: off.** It was on at 25 % for one series; after living with it Joaquín said "no me gusta al final".
+- **Enhance voice: off.** It was on at 25 % for one series; after living with it Joaquín said "no me gusta al final"
+  (in the end, I don't like it).
 - **Measure the room before deciding.** The VSL was recorded in a room with a little echo, and noise reduction made the
-  voice sound worse there: "es en este proyecto nomás porque tiene un poquito de eco la habitación". That project went
-  out with noise reduction off on all 88 clips (flipped in the JSON, CapCut quit, backup first). For a new recording in
-  that room, ask before turning it on.
+  voice sound worse there: "es en este proyecto nomás porque tiene un poquito de eco la habitación" (only in this
+  project, because the room has a bit of echo). That project went out with noise reduction off on all 88 clips
+  (flipped in the JSON, CapCut quit, backup first). For a new recording in that room, ask before turning it on.
 - **Be honest about what was approved.** The VSL preview used the mic file cut on the exact edit points plus one loudness
   pass by code, with none of CapCut's processing. Joaquín approved that sound thinking it was CapCut's. We said so,
   and the masters used exactly the sound that was approved.
@@ -30,11 +35,15 @@ you yet), then two weeks later asked for them explicitly. Both were right at the
 
 1. **Every cue is tied to something visible or said**: a cut, a card landing, a snap zoom, the word "WhatsApp". Nothing
    for decoration. Every cue in the edit list carries a `why`.
-2. **Fewer.** About one cue every 2 to 3 seconds at most. About 8 in 20 seconds reads designed; about 20 reads cheap.
-   Silence around a cue is what makes it land.
+2. **Fewer, under a voice.** About one cue every 2 to 3 seconds at most. About 8 in 20 seconds reads designed; about
+   20 reads cheap. Silence around a cue is what makes it land. A film with no voice is the opposite: every meaningful
+   move sounded, 2 to 4 onsets a second, no silent hole over about 1.7 s ([19](19-sound-effects.md)).
 3. **Hit on the frame.** Each sound in the kit knows where its peak is (`hit_ms`), and the renderer starts it that much
-   before the moment. A whoosh's energy peak goes on the moment of greatest visual change, and the sound starts 10 to
-   20 ms before the picture (the ear is faster than the eye). A riser ends on the reveal.
+   before the moment. A whoosh's energy peak goes on the moment of greatest visual change. The exact lead or lag
+   depends on the kind of sound (medians measured on professional launch films, in earshot's presets): a knock 40 ms
+   early, a bell 20 ms early, a pop 4 ms late, a card's thud 30 ms late, a whoosh's peak 37 ms after its frame. A riser
+   does not run into the reveal: it stops on its own peak two frames before it, or it masks the reveal's attack
+   ([19](19-sound-effects.md)).
 4. **One sound per moment.** Two cues within 0.5 s fight; drop the second.
 5. **Say it, hear it:** "WhatsApp" gets a notification chime once per ad, the first time it means a message arriving. A
    number that matters gets a pop or an impact, never both.
@@ -64,21 +73,35 @@ level is the median 100 ms RMS of the speech in that cut.
 | notify | a message arriving (a generic chime, not an app's real sound) | -9 dB |
 | impact | the reveal: the big number, 1 or 2 per ad at most | -8 dB |
 
+Check it with the stems, not by eye: on ten finished ads every effect sat 11.9 dB or more under the voice around it
+(`under_voice.py`, [19](19-sound-effects.md)). A first pass 2 to 3 dB quieter sat 14 to 29 dB under: safe, but likely
+lost on a phone speaker.
+
 ### Where the sounds come from
 
-- **Our kit is synthesized in code** ([`sfx_kit.py`](../code/edit-pipeline/scripts/sfx_kit.py)): noise, sines and
-  filters, so there is no licence question in a paid ad. `catalog.json` stores each sound's duration, `hit_ms`, its
-  own loudness and its default level.
+- **Since November, earshot's bank:** 252 sound effects made in code, rendered by id, no licence question. The whole
+  bank and the kit we mix with are in [`sounds/`](../sounds), ready to take; how we use them is
+  [19](19-sound-effects.md).
+- **The render path's first kit is synthesized in code too**
+  ([`sfx_kit.py`](../code/edit-pipeline/scripts/sfx_kit.py)): noise, sines and filters. `catalog.json` stores each
+  sound's duration, `hit_ms`, its own loudness and its default level.
 - Libraries that allow commercial use: Pixabay sound effects, Mixkit (check each item), CapCut's library (only items
   marked for commercial use), Meta's Sound Collection (free inside Meta ads, platform-bound).
 - Generated effects (ElevenLabs Sound Effects) are commercially usable only on a paid plan.
+- Recordings with no attribution needed: Kenney's CC0 audio packs, the CC0 items of Remotion's sound effects, Freesound
+  items marked CC0 ([19](19-sound-effects.md), "Recorded sound").
 
 ## Music
 
 Optional, and the person on camera's call. Instrumental only under a voice, even tracks with no drops under the talk.
 Duck it with a sidechain on the voice, 18 to 20 dB under the dialogue while someone talks, and cut 2 to 4 kHz on the
 bed to clear the voice band. For Meta ads the cleanest route is often no music in the file and a Sound Collection
-track added in Ads Manager.
+track added in Ads Manager (Meta clears those tracks only inside its own products: never for YouTube or a website).
+
+What we ran under a client's ads in November: a stock bed 15 LU under the voice plus a 4 dB sidechain duck while the
+voice talks, which measured 19.5 to 20.6 dB under the voice (median) on ten ads, with the track's drop on the ad's
+payoff. Joaquín picked a trap beat over a tech-house track that scored higher on earshot's critique: the metric
+measures, the ear decides ([19](19-sound-effects.md)).
 
 ## Loudness
 
@@ -88,6 +111,11 @@ track added in Ads Manager.
 - **Measure every export.** Running our QA on one of the ads exported from CapCut gave -13.2 LUFS and a **true peak of
   +0.1 dBTP**: over full scale, because the export has no limiter. Platforms will turn it down and may clip it. The fix
   is a limiter or a loudnorm pass before upload. That is exactly why every file gets measured.
+- **Measure the decoded file, not the WAV.** AAC overshoots sharp sounds: on a film full of clicks, a -1.5 dBTP master
+  decoded at +0.5 dBTP from ffmpeg's `aac` at 256k and at -0.1 from Apple's `aac_at` at 320k. With many clicks in the
+  mix, master at -2 dBTP and encode with `aac_at` ([19](19-sound-effects.md)).
+- **A file muxed without an edit list plays its AAC late** (44 ms with `aac_at` at 48 kHz): trim the encoder's priming
+  and check by cross-correlation ([14](14-masters-and-web.md), [19](19-sound-effects.md)).
 
 ## Keeping sound consistent across ads
 

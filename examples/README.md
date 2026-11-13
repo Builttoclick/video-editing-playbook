@@ -20,6 +20,22 @@ The three ads were pre-edited by code and edited by Joaquín in CapCut ([docs/07
 with overlays designed in Claude Design and rendered locally with real alpha ([docs/10](../docs/10-overlays-claude-design.md)).
 They are the ones of that series that do not say a price.
 
+### Added in November: animated films and sound effects
+
+Coded in Remotion with no camera, every sound from the code-made bank in [`../sounds/`](../sounds)
+([docs/19](../docs/19-sound-effects.md), [docs/20](../docs/20-animated-films.md)). **The four ads stop right before
+their end card**, because the end card shows our price, which stays out of this repo. The businesses on screen are
+invented.
+
+| File | What it is | What to look for |
+|---|---|---|
+| [`videos/animated-right-now.mp4`](videos/animated-right-now.mp4) | An animated ad, 40 s: "right now someone is typing on Google exactly what you sell" (problem, agitate, solve) | the search typed on a phone keyboard with the suggestions dropdown, the two phones (you and "the other one"), the 14-day calendar filling tile by tile |
+| [`videos/animated-chatgpt-story.mp4`](videos/animated-chatgpt-story.mp4) | An animated ad, 40 s: a man in Brazil asked ChatGPT who could bring a crane from Europe (hook, story, offer) | a real globe drawn with d3-geo, the ChatGPT box typing in Portuguese, the gold labels landing on "what it does, for whom and from where" |
+| [`videos/animated-three-second-test.mp4`](videos/animated-three-second-test.mp4) | An animated ad, 41 s: "do this test" (a challenge to the viewer) | the 1, 2, 3 count over a generic template page, the red cross, the empty page with a question mark, the WhatsApp notifications stacking |
+| [`videos/animated-night-shift.mp4`](videos/animated-night-shift.mp4) | An animated ad, 38 s: almost 4 in 10 contacts arrive outside business hours | day turning to night, the shop with its shutter down and the page still answering, the clock, the morning message |
+| [`videos/explainer-local-seo.mp4`](videos/explainer-local-seo.mp4) | A 40 s explainer: what local SEO is and why it matters | the map pack, the before and after zone heatmaps, the WhatsApp flood with a 99+ counter; the same WhatsApp tone every time, never a melody (Joaquín's rule) |
+| [`videos/sfx-test-ranking.mp4`](videos/sfx-test-ranking.mp4) | The first 10 s test of the code-made sound effects | a Google ranking animation where every movement has its sound, the mix Joaquín approved as the starting kit |
+
 ## Images
 
 | File | What |
@@ -30,4 +46,6 @@ They are the ones of that series that do not say a price.
 | [`images/vsl-strip.jpg`](images/vsl-strip.jpg) | eight moments of the VSL |
 | [`images/qa-cuts.jpg`](images/qa-cuts.jpg) | our QA script's cut sheet on ad V6-01: the frame before and after every cut |
 | [`images/qa-safe.jpg`](images/qa-safe.jpg) | its safe-zone sheet: the Reels-ad dead zones in red, the 4:5 crop in blue |
+| [`images/animated-strip.jpg`](images/animated-strip.jpg) | eight moments of the animated films and the explainer |
+| [`images/whatsapp-flood.gif`](images/whatsapp-flood.gif) | the WhatsApp flood of the local SEO explainer (no sound in a GIF: play the video) |
 | `images/poster-*.jpg` | poster frames for the links above |

@@ -1,6 +1,6 @@
 # 18. Tools, versions and costs
 
-Everything we run, with the versions that were in use in October 2026. Almost all of it is free; the exceptions are
+Everything we run, with the versions that were in use in October and November 2026. Almost all of it is free; the exceptions are
 marked.
 
 ## Hardware
@@ -28,6 +28,11 @@ marked.
 | Node.js | 22 | Remotion | free |
 | Playwright's `chrome-headless-shell` | 145 | the browser Remotion renders with on the Mac | free |
 | Apple Vision | macOS | person segmentation masks | free |
+| earshot | 0.4.0 ([Leonxlnx/earshot](https://github.com/Leonxlnx/earshot), MIT) | 252 sound effects made in code, and the listening tools (timeline, sheet, critique, rank, realness) for an agent that cannot hear | free |
+| PyTorch + the CLAP and AST audio models | through earshot's own venv | earshot's ears (describe, rank, match); `sfx` and `kit` work without them | free |
+| d3-geo + world-atlas + topojson-client | npm | a real globe in a coded film | free |
+| LaMa (big-lama, TorchScript) | loaded with `torch.jit.load`, no app | inpainting an empty-chair plate under the person mask | free |
+| Whisper (turbo) | local | a second opinion on the first sound of a word at a cut edge | free |
 | `@fontsource/poppins` | 5.2 | Poppins inside the renders (SIL Open Font License) | free |
 | Iconify icon sets | Solar (CC BY 4.0), Remix Icon (Apache 2.0) | icons in the graphics | free |
 | VMAF (libvmaf in ffmpeg) | | measuring the web encode | free |
@@ -56,6 +61,19 @@ export REMOTION_BROWSER="$(ls -d ~/Library/Caches/ms-playwright/chromium_headles
 swiftc -O code/vsl-motion/tools/personmask.swift -o code/vsl-motion/tools/personmask
 export ELEVENLABS_API_KEY=...                                 # for transcription
 ```
+
+For the sound effects ([19](19-sound-effects.md)):
+
+```bash
+git clone https://github.com/Leonxlnx/earshot ~/tools/earshot && cd ~/tools/earshot
+python3 -m venv .venv
+.venv/bin/python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+.venv/bin/python -m pip install -e ".[mcp,llm,dev]"
+.venv/bin/python -m earshot doctor --load                     # first use downloads two models, about 1.1 GB
+```
+
+Keep earshot's venv and its model cache outside any folder you sync: torch and the models are a few gigabytes. The
+rendered sounds themselves are already in [`sounds/`](../sounds) if you only want the files.
 
 Fonts: download Poppins from Google Fonts. The render tool expects `code/edit-pipeline/assets/fonts/Poppins-Bold.ttf`;
 the VSL export expects Poppins Bold in `~/Library/Fonts`.

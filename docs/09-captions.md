@@ -31,6 +31,11 @@ Earlier measurements that are also true, so nobody re-measures them:
   is `Fontsize 211` with `Spacing -6` at PlayRes 1080x1920, centred at `\an5\pos(540,1515)`. Calibrated by rendering
   "entrar" until it measured the same 380 px as on the export.
 
+**Two later adjustments.** On coded overlays (November) Joaquín asked for captions a bit bolder than Poppins Bold
+once rendered: Poppins ExtraBold, same size and spacing. And the captions are never covered by a graphic ("that the
+captions don't get stamped over"); a graphic may cover a little of the speaker's hair instead. Every caption sits inside
+Meta's 4:5 band (y 285 to 1635), which the house position at y 1497 already does.
+
 ## The text rules
 
 From the captions Joaquín wrote by hand on earlier ads ([`captions.py`](../code/capcut-pre-edit/captions.py)):

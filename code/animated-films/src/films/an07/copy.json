@@ -1,0 +1,202 @@
+{
+  "beats": {
+    "hook": {
+      "lines": [
+        "Hacé esta prueba."
+      ],
+      "center": true,
+      "top": 960,
+      "max": 96
+    },
+    "test": {
+      "lines": [
+        "Buscá en Google lo que vendés,",
+        "entrá a la primera página que",
+        "te aparezca y contá hasta 3."
+      ],
+      "gold": [
+        "3."
+      ]
+    },
+    "q1": {
+      "lines": [
+        "¿Entendiste qué venden",
+        "y desde dónde?"
+      ]
+    },
+    "q2": {
+      "lines": [
+        "¿Y dónde tocás",
+        "para escribirles?"
+      ]
+    },
+    "people": {
+      "lines": [
+        "La gente hace esa prueba",
+        "todos los días, con tu negocio:"
+      ],
+      "gold": [
+        "tu",
+        "negocio:"
+      ]
+    },
+    "back": {
+      "lines": [
+        "mira 3 segundos, y si no entiende,",
+        "vuelve atrás y entra a la de al lado."
+      ],
+      "gold": [
+        "3",
+        "segundos,"
+      ]
+    },
+    "yours": {
+      "lines": [
+        "Ahora hacé lo mismo",
+        "con tu página."
+      ],
+      "gold": [
+        "tu",
+        "página."
+      ]
+    },
+    "none": {
+      "lines": [
+        "Y si todavía no tenés, ya sabés",
+        "a quién le están escribiendo."
+      ]
+    },
+    "ours": {
+      "lines": [
+        "Cada página que hacemos arranca",
+        "con una frase que dice",
+        "qué vendés y dónde."
+      ],
+      "gold": [
+        "qué",
+        "vendés",
+        "dónde."
+      ]
+    },
+    "button": {
+      "lines": [
+        "Y el botón de WhatsApp queda",
+        "siempre a mano, en cualquier",
+        "parte de la página."
+      ],
+      "gold": [
+        "siempre",
+        "a",
+        "mano,"
+      ]
+    },
+    "all": {
+      "lines": [
+        "Todo lo que yo hago está orientado",
+        "a eso: que la gente entienda",
+        "rápido y te escriba."
+      ],
+      "gold": [
+        "rápido",
+        "te",
+        "escriba."
+      ]
+    }
+  },
+  "query": "estudio contable en luque",
+  "suggestions": [
+    "estudio contable en luque",
+    "estudio contable luque precios",
+    "contador en luque",
+    "estudio contable cerca de mí"
+  ],
+  "results": [
+    {
+      "name": "Estudio Contable Central",
+      "title": "Bienvenidos | Estudio Contable Central",
+      "snippet": "Somos una empresa líder con años de experiencia brindando soluciones integrales a nuestros clientes.",
+      "color": "#7A7A7A"
+    },
+    {
+      "name": "Contadores Asociados",
+      "title": "Contadores Asociados - Inicio",
+      "snippet": "Servicios contables, impositivos y laborales. Consultanos.",
+      "color": "#1F4E9C"
+    },
+    {
+      "name": "Estudio Vega",
+      "title": "Estudio Vega | Contabilidad e impuestos en Luque",
+      "snippet": "Balances, IVA y nóminas para pymes de Luque. Escribinos por WhatsApp.",
+      "color": "#2F6B4F"
+    }
+  ],
+  "template": {
+    "welcome": "Bienvenidos a nuestra web",
+    "para": "Somos una empresa líder con años de experiencia brindando soluciones integrales a nuestros clientes.",
+    "more": "Leer más",
+    "footer": [
+      "Inicio",
+      "Nosotros",
+      "Servicios",
+      "Contacto"
+    ]
+  },
+  "count": [
+    "1",
+    "2",
+    "3"
+  ],
+  "yours": {
+    "label": "Tu página",
+    "hint": "¿y la tuya?"
+  },
+  "message": "Hola, necesito un contador para mi empresa",
+  "ourPage": {
+    "brand": "Tu estudio",
+    "nav": [
+      "Servicios",
+      "Equipo",
+      "Contacto"
+    ],
+    "headline": "Estudio contable en Luque",
+    "sub": "Impuestos, balances y nóminas para pymes, sin sorpresas.",
+    "button": "Escribinos",
+    "services": [
+      "Liquidación de IVA e IRE",
+      "Balances y auditoría",
+      "Nóminas y IPS"
+    ]
+  },
+  "timer": "1 s",
+  "messages": [
+    "Hola, necesito un contador para mi empresa",
+    "Buenas, ¿liquidan IVA mensual?",
+    "Hola, vi su página. ¿Atienden en Luque?"
+  ],
+  "end": {
+    "lines": [
+      "Escribime el nombre",
+      "de tu negocio y te muestro",
+      "cómo sería la tuya."
+    ],
+    "price": "X.XXX.XXX",
+    "sub": "Tu página, lista en 14 días.",
+    "cta": "Escribinos por WhatsApp"
+  },
+  "page2": {
+    "brand": "Contadores Asociados",
+    "nav": [
+      "Servicios",
+      "Nosotros",
+      "Contacto"
+    ],
+    "headline": "Servicios contables e impositivos",
+    "sub": "Liquidación de impuestos, balances y nóminas.",
+    "button": "Escribinos",
+    "services": [
+      "Impuestos",
+      "Balances",
+      "Nóminas"
+    ]
+  }
+}
